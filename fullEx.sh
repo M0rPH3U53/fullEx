@@ -1,6 +1,6 @@
 #!/bin/bash
 
-arch=64 32
+arch="64 32"
 
 if [[ "$*" == "-help" ]]; then
     echo "Commande :"
