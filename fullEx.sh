@@ -13,5 +13,12 @@ if [[ "$*" == "-help" ]]; then
     exit 0
 fi
 
+# PwnKit
 if [[ "$*" == "-PwnKit${arch}" ]]; then
-    "${PWD}/exploit/PwnKit/PwnKit${arch}"
+    "${PWD}/exploit/PwnKit/PwnKit${arch}"    
+fi
+
+# Sudo-Host
+if [[ "$*" == "-SudoHost" ]]; then
+    "${PWD}/exploit/Sudo-host/exploit"
+fi
