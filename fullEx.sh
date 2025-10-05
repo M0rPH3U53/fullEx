@@ -1,6 +1,6 @@
 #!/bin/bash
 
-arch=${64 || 32}
+arch=64
 
 if [[ "$*" == "-help" ]]; then
     echo "Commande :"
@@ -9,7 +9,6 @@ if [[ "$*" == "-help" ]]; then
     echo "  -DirtyPipe     : Exploite DirtyPipe"
     echo "  -Chwoot        : Exploite Sudo Chroot"
     echo "  -SudoHost      : Exploite Sudo Hostname "
-    echo "  -Baron         : Exploite sudo_Baron"
     echo "  -check         : Verifie si gcc est installer"
     exit 0
 fi
