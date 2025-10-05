@@ -1,5 +1,7 @@
 #!/bin/bash
 
+arch=${64 || 32}
+
 if [[ "$*" == "-help" ]]; then
     echo "Commande :"
     echo "  -PwnKit64/32   : Exploite PwnKit en architecture 64/32"
@@ -11,3 +13,6 @@ if [[ "$*" == "-help" ]]; then
     echo "  -check         : Verifie si gcc est installer"
     exit 0
 fi
+
+if [[ "$*" == "-PwnKit${arch}" ]]; then
+    "${PWD}/exploit/PwnKit/PwnKit${arch}"
