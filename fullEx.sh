@@ -7,7 +7,7 @@ if [[ "$*" == "-help" ]]; then
     echo "  -PwnKit64/32   : Exploite PwnKit en architecture 64/32"
     echo "  -DirtyCow      : Exploite DirtyCow"
     echo "  -DirtyPipe     : Exploite DirtyPipe"
-    echo "  -Chwoot        : Exploite Sudo Chroot"
+    echo "  -Chroot        : Exploite Sudo Chroot"
     echo "  -SudoHost      : Exploite Sudo Hostname "
     echo "  -check         : Verifie si gcc est installer"
     exit 0
