@@ -4,6 +4,7 @@ arch="64 32"
 
 if [[ "$*" == "-help" ]]; then
     echo "Commande :"
+    echo "  -LinPeas       : Execute LinPeas"
     echo "  -DirtyCow      : DirtyCow - CVE-2016-5195"
     echo "  -PwnKit64/32   : PwnKit64/32 - CVE-2021-4034"
     echo "  -DirtyPipe     : DirtyPipe - CVE-2022-0847"
