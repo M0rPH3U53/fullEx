@@ -14,7 +14,6 @@ if [[ "$*" == "-help" ]]; then
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462 "
     echo "   -check         Verifie si gcc & python est installer"
     echo "   -perm          Applique les droit d'execution"
-    echo "   -compile       Compile le binaire"
     exit 0
 fi
 
@@ -22,11 +21,6 @@ fi
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
 fi
-
-# if [[ "$*" == "-compile" ]]; then
-#    gcc ${file} -o ${bin}
-#    echo "[+] Compilation reussi !"
-# fi
 
 # LinPeas
 if [[ "$*" == "-LinPeas" ]]; then
