@@ -12,7 +12,7 @@ if [[ "$*" == "-help" ]]; then
     echo "   -Chroot        Sudo Chroot - CVE-2025-32463"
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462 "
     echo "   -check         Verifie si gcc & python est installer"
-    echo "   -perm          Application des droit sur le dossier "fullEx""
+    echo "   -perm          Application des droit sur le dossier fullEx"
     exit 0
 fi
 
