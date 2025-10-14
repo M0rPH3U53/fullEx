@@ -9,7 +9,7 @@ Les exploits root & outils dispo :
 
 👾 LaZAGNE
 
-# Commandes
+# ⚙️ Commandes
 
 ```
 heisenberg@kb-server:~/fullEx$ ./fullEx.sh -help
@@ -35,7 +35,7 @@ Commands:
    -help          Affiche les commandes
 
  ```
-# Exemple
+# 💲 Exemple
 
 ```
 heisenberg@kb-server:~/fullEx$ ./fullEx.sh -perm
