@@ -7,7 +7,7 @@ Les exploits root & outils dispo :
 
 🤖 LinPeas
 
-👾 LaZAGNE
+👾 LaZagne
 
 # ⚙️ Commandes
 
