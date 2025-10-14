@@ -2,9 +2,9 @@
 
 
 Automatisation d'exploits root Linux avec les outils de type linpeas & lazagne
-- PwnKit
-- LinPeas
-- LaZagne
+💀 PwnKit
+🤖 LinPeas
+👾 LaZagne
 
 # Commandes
 
