@@ -1,8 +1,10 @@
 # <img width="1335" height="890" alt="image" src="https://github.com/user-attachments/assets/c947aebb-593b-4027-bc50-ac87663ff387" />
 
 
-A venir - Automatisation d'exploits root Linux
+Automatisation d'exploits root Linux & d'outils de type linpeas & lazagne
 - PwnKit
+- LinPeas
+- LaZagne
 
 # Commandes
 
