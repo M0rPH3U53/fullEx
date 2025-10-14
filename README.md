@@ -33,7 +33,6 @@ Commands:
    -check         Verifie si gcc est installer
    -perm          Applique les droit d'execution
    -help          Affiche les commandes
-
  ```
 # 💲 Exemple
 
