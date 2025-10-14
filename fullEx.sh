@@ -1,9 +1,28 @@
 #!/bin/bash
 
+ascii() {
+    cat <<"EOF"
+
+                                                    
+__________      ____________________       
+___  ____/___  ____  /__  /__  ____/___  __
+__  /_   _  / / /_  /__  /__  __/  __  |/_/
+_  __/   / /_/ /_  / _  / _  /___  __>  <  
+/_/      \__,_/ /_/  /_/  /_____/  /_/|_|  
+                                                                                                   
+by M0rPH3U53
+
+      
+EOF
+}                                   
+
 arch="64 32"
 
 if [[ "$*" == "-help" ]]; then
-    echo "cmd:"
+    ascii
+    echo "Usage: ./fullEx.sh COMMAND"
+    echo " "
+    echo "Commands:"
     echo "   -LinPeas       Execute LinPeas"
     echo "   -LaZagne       Execute LaZagne"
     echo "   -Overlays      Overlays64 - CVE-2015-1328"
@@ -12,14 +31,25 @@ if [[ "$*" == "-help" ]]; then
     echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
     echo "   -Chroot        Sudo Chroot - CVE-2025-32463"
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462 "
-    echo "   -check         Verifie si gcc & python est installer"
+    echo "   -check         Verifie si gcc est installer"
     echo "   -perm          Applique les droit d'execution"
+    echo "   -compile       Compile le binaire"
+    echo " "
     exit 0
 fi
 
 # Application des droit d'execution
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
+fi
+
+# Verifie si GCC est installer
+if [[ "$*" == "-check" ]]; then
+   which gcc python > /dev/null 2>&1
+   echo "[+] GCC found !"
+   
+else
+    echo "[-] GCC not found !"
 fi
 
 # LinPeas
