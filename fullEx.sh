@@ -16,8 +16,6 @@ by M0rPH3U53
 EOF
 }                                   
 
-arch="64 32"
-
 if [[ "$*" == "-help" ]]; then
     ascii
     echo "Usage: ./fullEx.sh COMMAND"
@@ -57,6 +55,8 @@ if [[ "$*" == "-LaZagne" ]]; then
 fi
 
 # PwnKit
-if [[ "$*" == "-PwnKit${arch}" ]]; then
-   "${PWD}exploits/PwnKit/PwnKit${arch}"
-fi
+for arch in 64 32; do
+     if [[ "$*" == "-PwnKit${arch}" ]]; then
+          "${PWD}/exploits/PwnKit/PwnKit${arch}"
+     fi
+done
