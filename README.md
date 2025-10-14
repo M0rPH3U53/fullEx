@@ -32,6 +32,4 @@ Commands:
    -perm          Applique les droit d'execution
    -help          Affiche les commandes
 
-┌──[m0rph3u5@parrot]─[~]
-└──╼ $
  ```
