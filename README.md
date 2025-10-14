@@ -1,7 +1,13 @@
 # <img width="1335" height="890" alt="image" src="https://github.com/user-attachments/assets/c947aebb-593b-4027-bc50-ac87663ff387" />
 
 
-Automatisation d'exploits root Linux avec les outils de type linpeas & lazagne
+Les exploits root & outils :
+
+💀 PwnKit
+
+🤖 LinPeas
+
+👾 LaZAGNE
 
 # Commandes
 
