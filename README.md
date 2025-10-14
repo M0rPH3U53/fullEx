@@ -28,6 +28,7 @@ Commands:
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034    
    -check         Verifie si gcc est installer
    -perm          Applique les droit d'execution
+   -help          Affiche les commandes
 
 ┌──[m0rph3u5@parrot]─[~]
 └──╼ $
