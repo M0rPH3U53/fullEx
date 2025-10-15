@@ -39,9 +39,6 @@ fi
 if [[ "$*" == "-check" ]]; then
    which gcc python > /dev/null 2>&1
    echo "[+] GCC found !"
-   
-else
-    echo "[-] GCC not found !"
 fi
 
 # LinPeas
