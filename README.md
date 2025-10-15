@@ -37,7 +37,7 @@ Commands:
 # 💲 Exemple
 
 ```
-heisenberg@kb-server:~/fullEx$ ./fullEx.sh -perm
+heisenberg@kb-server:~/fullEx$ bash fullEx.sh -perm
 heisenberg@kb-server:~/fullEx$ ./fullEx.sh -PwnKit64
 To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
