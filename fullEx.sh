@@ -37,7 +37,7 @@ fi
 
 # Verifie si GCC est installer
 if [[ "$*" == "-check" ]]; then
-   which gcc python > /dev/null 2>&1
+   which gcc > /dev/null 2>&1
    echo "[+] GCC found !"
 fi
 
