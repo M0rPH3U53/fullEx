@@ -25,7 +25,7 @@ if [[ "$*" == "-help" ]]; then
     echo "Commands:"
     echo "   -LinPeas       Execute LinPeas"
     echo "   -LaZagne       Execute LaZagne"
-    echo "   -Overlays      Compilation + execution binaire - CVE-2021-3493"
+    echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462"
     echo "   -check         Verifie si gcc est installer"
