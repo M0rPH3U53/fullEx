@@ -63,11 +63,11 @@ for arch in 64 32; do
 done
 
 if [[ "$*" == "-Overlays" ]]; then
-     gcc ${PWD}/exploits/Overlays/overlays.c -o ${PWD}/exploits/Overlays/overlays
+     gcc ${PWD}/exploit/Overlays/overlays.c -o ${PWD}/exploit/Overlays/overlays
      echo "[+] Compilation successfuly !"
      echo "[+] PATH=${PWD}/exploits/Overlays/overlays"
      echo "[+] Executing the binary..."
-     ${PWD}/exploits/Overlays/overlays
+     ${PWD}/exploit/Overlays/overlays
 
 fi
 
