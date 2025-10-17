@@ -50,7 +50,7 @@ fi
 
 # LinPeas
 if [[ "$*" == "-LinPeas" ]]; then
-   "${PWD}linpeas/linpeas.sh"
+   "${PWD}/linpeas/linpeas.sh"
 fi
 
 # LaZagne
@@ -61,17 +61,17 @@ fi
 # PwnKit
 for arch in 64 32; do
      if [[ "$*" == "-PwnKit${arch}" ]]; then
-          "${PWD}/exploits/PwnKit/PwnKit${arch}"
+          "${PWD}/exploit/PwnKit/PwnKit${arch}"
      fi
 done
 
 # Compilation OverlayFS
 if [[ "$*" == "-OverC" ]]; then
-     gcc ${PWD}/exploits/Overlays/overlays.c -o ${PWD}/exploits/Overlays/overlays
+     gcc ${PWD}/exploit/Overlays/overlays.c -o ${PWD}/exploit/Overlays/overlays
      echo "[+] Compilation successfuly !"
 fi
 
 # Execution OverlayFS
 if [[ "$*" == "-Overlays" ]]; then
-     "${PWD}/exploits/Overlays/overlays"
+     "${PWD}/exploit/Overlays/overlays"
 fi
