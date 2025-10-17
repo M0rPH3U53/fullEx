@@ -31,6 +31,7 @@ if [[ "$*" == "-help" ]]; then
     echo "   -Overlays      Overlays64 - CVE-2015-1328"
     echo " " 
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
+    echo "   -SudoHost      Sudo Hostname - CVE-2025-32462"
     echo "   -check         Verifie si gcc est installer"
     echo "   -perm          Applique les droit d'execution sur '/fullEx'"
     echo " "
@@ -74,4 +75,9 @@ fi
 # Execution OverlayFS
 if [[ "$*" == "-Overlays" ]]; then
      "${PWD}/exploit/Overlays/overlays"
+fi
+
+# Sudo-Host
+if [[ "$*" == "-SudoHost" ]]; then
+     "${PWD}/exploit/Sudo-host/exploit.sh"
 fi
