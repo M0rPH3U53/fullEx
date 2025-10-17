@@ -65,7 +65,7 @@ done
 if [[ "$*" == "-Overlays" ]]; then
      gcc ${PWD}/exploit/Overlays/overlays.c -o ${PWD}/exploit/Overlays/overlays
      echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploits/Overlays/overlays"
+     echo "[+] PATH=${PWD}/exploit/Overlays/overlays"
      echo "[+] Executing the binary..."
      ${PWD}/exploit/Overlays/overlays
 
