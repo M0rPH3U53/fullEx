@@ -59,6 +59,8 @@ vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -SudoHost
 [+] Type 'exit' or 'quit' to leave.
 [+] For a real shell, type: bash
 [+] Or: vim → :!bash to break into a real TTY shell
-root@dev# id
-uid=0(root) gid=0(root) groups=0(root)   
+root@dev# bash -i
+root@metasploitable3-ub1404:~/fullEx# id
+uid=0(root) gid=0(root) groups=0(root)
+  
 ```
