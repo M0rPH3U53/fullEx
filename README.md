@@ -3,6 +3,8 @@
 
 Les exploits root & outils dispo :
 
+💀 Sudo Host
+
 💀 OverlayFS
 
 💀 PwnKit
