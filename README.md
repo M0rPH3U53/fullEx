@@ -13,7 +13,7 @@ Les exploits root & outils dispo :
 
 👾 LaZagne
 
-# ⚙️ Demo
+# ⚙️ Commandes
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -help
@@ -42,7 +42,7 @@ Commands:
    -perm          Applique les droit d'execution '/fullEx'
    -help          Affiche les commandes
  ```
-# 💲 Exemple
+# 💲 Demo
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
