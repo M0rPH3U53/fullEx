@@ -13,7 +13,7 @@ Les exploits root & outils dispo :
 
 👾 LaZagne
 
-# ⚙️ Commandes
+# ⚙️ Demo
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -help
@@ -35,7 +35,7 @@ Usage: ./fullEx.sh COMMAND
 Commands:
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
-   -Overlays      Overlays64 - CVE-2015-1328
+   -Overlays      Compilation + execution binaire - CVE-2021-3493
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
    -SudoHost      Sudo Hostname - CVE-2025-32462   
    -check         Verifie si gcc est installer
