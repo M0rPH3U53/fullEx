@@ -38,7 +38,8 @@ OverlaysFS
    -OverC         Compile le script C#
    -Overlays      Overlays64 - CVE-2015-1328
 
-   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034    
+   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
+   -SudoHost      Sudo Hostname - CVE-2025-32462   
    -check         Verifie si gcc est installer
    -perm          Applique les droit d'execution
    -help          Affiche les commandes
