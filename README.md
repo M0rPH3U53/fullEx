@@ -32,7 +32,7 @@ Commands:
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
 
-OverlaysFS:
+OverlaysFS
    -OverC         Compile le script C#
    -Overlays      Overlays64 - CVE-2015-1328
 
