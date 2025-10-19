@@ -39,6 +39,7 @@ Commands:
    -LaZagne       Execute LaZagne
    -Overlays      Compilation + execution binaire - CVE-2015-1328
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
+   -DirtyPipe     DirtyPipe - CVE-2022-0847
    -SudoHost      Sudo Hostname - CVE-2025-32462   
    -check         Verifie si gcc est installer
    -perm          Applique les droit d'execution '/fullEx'
