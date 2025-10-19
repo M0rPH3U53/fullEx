@@ -79,6 +79,6 @@ fi
 
 # DirtyPipe
 if [[ "$*" == "-DirtyPipe" ]]; then
-     ${PWD}/exploits/DirtyPipe/dpipe --root
+     ${PWD}/exploit/DirtyPipe/dpipe --root
      cat /etc/passwd | grep root
 fi
