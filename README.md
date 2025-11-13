@@ -180,7 +180,7 @@ Binary file (standard input) matches
 www-data@ubuntu:/tmp/fullEx$ su - firefart
 Password: azerty
 
-firefart@ubuntu:/tmp/fullEx$# id
+firefart@ubuntu:/tmp/fullEx# id
 id
 uid=0(firefart) gid=0(root) groups=0(root)
 ```
