@@ -29,7 +29,6 @@ if [[ "$*" == "-help" ]]; then
     echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
     echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
-    echo "   -SudoHost      Sudo Hostname - CVE-2025-32462"
     echo "   -check         Verifie si gcc est installer"
     echo "   -perm          Applique les droit d'execution sur '/fullEx'"
     echo " "
