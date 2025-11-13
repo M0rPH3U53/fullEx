@@ -36,7 +36,7 @@ if [[ "$*" == "-help" ]]; then
     exit 0
 fi
 
-# Applique les droit d'execution sur le dossier fullEx
+# Applique les droit d'execution sur le l'ensemble du dossier fullEx
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
 fi
