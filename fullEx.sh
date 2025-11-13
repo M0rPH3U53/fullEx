@@ -36,15 +36,18 @@ if [[ "$*" == "-help" ]]; then
     exit 0
 fi
 
-# Application des droit d'execution
+# Applique les droit d'execution sur le dossier fullEx
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
 fi
 
 # Verifie si GCC est installer
 if [[ "$*" == "-check" ]]; then
-   which gcc > /dev/null 2>&1
-   echo "[+] GCC found !"
+     if which gcc >/dev/null 2>&1; then
+          echo "[+] GCC found!"
+     else
+          echo "[-] GCC not found!"
+     fi
 fi
 
 # LinPeas
