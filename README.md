@@ -3,21 +3,6 @@
 
 Les exploits root & outils dispo :
 
-💀 Sudo-Host
-
-💀 DirtyCow
-
-💀 DirtyPipe
-
-💀 OverlayFS
-
-💀 PwnKit
-
-🤖 LinPeas
-
-👾 LaZagne
-
-
 | Exploit | CVE |
 | --- | --- |
 | Sudo-Host | CVE-2025-32462 |
@@ -26,8 +11,9 @@ Les exploits root & outils dispo :
 | OverlayFS | CVE-2015-1328 |
 | PwnKit | CVE-2021-4034 |
 
+🤖 LinPeas
 
-
+👾 LaZagne
 
 ## 🛠️ Commandes
 
