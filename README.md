@@ -17,6 +17,18 @@ Les exploits root & outils dispo :
 
 👾 LaZagne
 
+
+| Exploit | CVE |
+| --- | --- |
+| Sudo-Host | CVE-2025-32462 |
+| DirtyCow | CVE-2016-5195 |
+| DirtyPipe | CVE-2022-0847 |
+| OverlayFS | CVE-2015-1328 |
+| PwnKit | CVE-2021-4034 |
+
+
+
+
 ## 🛠️ Commandes
 
 Pour rendre executable fullEx.sh ,faire un -perm sur tout le dossier
