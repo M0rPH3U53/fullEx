@@ -120,6 +120,48 @@ elapsed time = 9.25296401978
 
 ```
 
+## 👻 Pspy
+
+```
+debian@debian12:~/fullEx$ ./fullEx.sh -Pspy64
+pspy - version: v1.2.1 - Commit SHA: f9e6a1590a4312b9faa093d8dc84e19567977a6d
+
+
+     ██▓███    ██████  ██▓███ ▓██   ██▓
+    ▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+    ▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+    ▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+    ▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+    ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+    ░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+    ░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+                   ░           ░ ░     
+                               ░ ░     
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scanning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2026/04/03 14:08:16 CMD: UID=1000  PID=848    | /home/debian/fullEx/pspy/pspy64 
+2026/04/03 14:08:16 CMD: UID=1000  PID=847    | /bin/bash ./fullEx.sh -Pspy64 
+2026/04/03 14:08:16 CMD: UID=1000  PID=636    | -bash 
+2026/04/03 14:08:16 CMD: UID=1000  PID=635    | sshd: debian@pts/0   
+2026/04/03 14:08:16 CMD: UID=1000  PID=616    | (sd-pam) 
+2026/04/03 14:08:16 CMD: UID=1000  PID=615    | /lib/systemd/systemd --user 
+2026/04/03 14:08:16 CMD: UID=0     PID=612    | sshd: debian [priv]  
+2026/04/03 14:08:16 CMD: UID=0     PID=608    | sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups 
+2026/04/03 14:08:16 CMD: UID=0     PID=607    | /sbin/agetty -o -p -- \u --noclear - linux 
+2026/04/03 14:08:16 CMD: UID=0     PID=480    | /sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev 
+2026/04/03 14:08:16 CMD: UID=104   PID=471    | avahi-daemon: chroot helper 
+2026/04/03 14:08:16 CMD: UID=0     PID=468    | /lib/systemd/systemd-logind 
+2026/04/03 14:08:16 CMD: UID=103   PID=467    | /usr/sbin/snmpd -LOw -u Debian-snmp -g Debian-snmp -I -smux mteTrigger mteTriggerConf -f 
+2026/04/03 14:08:16 CMD: UID=100   PID=464    | /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+2026/04/03 14:08:16 CMD: UID=0     PID=462    | /usr/sbin/cron -f 
+2026/04/03 14:08:16 CMD: UID=0     PID=461    | /usr/sbin/avahi-dnsconfd -s 
+2026/04/03 14:08:16 CMD: UID=104   PID=459    | avahi-daemon: running [debian.local] 
+2026/04/03 14:08:16 CMD: UID=0     PID=458    | /usr/sbin/anacron -d -q -s 
+2026/04/03 14:08:16 CMD: UID=997   PID=449    | /lib/systemd/systemd-timesyncd 
+```
+
 ## 💀 PwnKit
 
 ```
