@@ -17,7 +17,7 @@
 | --- | --- |
 | LaZagne | Récupére les mots de passe stocké en local |
 | LinPeas | Script d'escalade de privilèges Linux |
-| Pspy | Surveillez les processus Linux sans autorisations root |
+| Pspy | Surveille les processus Linux sans autorisations root |
 
 
 ## 🛠️ Commandes
