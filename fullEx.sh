@@ -24,6 +24,7 @@ if [[ "$*" == "-help" ]]; then
     echo "Commands:"
     echo "   -LinPeas       Execute LinPeas"
     echo "   -LaZagne       Execute LaZagne"
+    echo "   -Pspy64/32     Execute pspy64/32"
     echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
     echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
@@ -49,6 +50,8 @@ if [[ "$*" == "-check" ]]; then
      fi
 fi
 
+## Outils ##
+
 # LinPeas
 if [[ "$*" == "-LinPeas" ]]; then
    "${PWD}/linpeas/linpeas.sh"
@@ -58,6 +61,15 @@ fi
 if [[ "$*" == "-LaZagne" ]]; then
   "${PWD}/LaZagne/Linux/laZagne.py"
 fi
+
+# Pspy
+for arch in 64 32; do
+     if [[ "$*" == "-Pspy${arch}" ]]; then
+          "${PWD}/pspy/pspy${arch}"
+     fi
+done
+
+## Exploit ##
 
 # PwnKit
 for arch in 64 32; do
