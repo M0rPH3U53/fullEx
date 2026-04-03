@@ -1,7 +1,7 @@
 # <img width="1335" height="890" alt="image" src="https://github.com/user-attachments/assets/c947aebb-593b-4027-bc50-ac87663ff387" />
 
 
-Exploits root & outils:
+💀 Exploits root
 
 | Exploit | CVE |
 | --- | --- |
@@ -11,9 +11,14 @@ Exploits root & outils:
 | OverlayFS | CVE-2015-1328 |
 | PwnKit | CVE-2021-4034 |
 
-🤖 LinPeas
+⚙️ Outils
 
-👾 LaZagne
+| Outils | Description |
+| --- | --- |
+| LaZagne | Récupérezles mots de passe stocké en local |
+| LinPeas | Script d'escalade de privilèges Linux |
+| Pspy | Surveillez les processus Linux sans autorisations root |
+
 
 ## 🛠️ Commandes
 
