@@ -3,7 +3,7 @@
 
 ## 💀 Exploits root
 
-| LPE | CVE |
+| Exploits | CVE |
 | --- | --- |
 | Sudo-Host | CVE-2025-32462 |
 | DirtyCow | CVE-2016-5195 |
