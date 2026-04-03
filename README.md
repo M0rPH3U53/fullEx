@@ -40,6 +40,7 @@ Usage: ./fullEx.sh COMMAND
 Commands:
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
+   -Pspy64/32     Execute pspy64/32
    -Overlays      Compilation + execution binaire - CVE-2015-1328
    -DirtyCow      Compilation + execution binaire - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
