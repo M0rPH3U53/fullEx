@@ -43,18 +43,24 @@ $$ |      \$$$$$$  |$$ |$$ |$$$$$$$$\ $$  /\$$\
  
 Usage: ./fullEx.sh COMMAND
  
-Commands:
+Outils:
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
    -Pspy64/32     Execute pspy64/32
-   -Overlays      Compilation + execution binaire - CVE-2015-1328
+   -DumpCred      Dump les creds
+ 
+Exploits:
+   -Overlays      Compilation + execution binaire - CVE-2021-3493
    -DirtyCow      Compilation + execution binaire - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
    -DirtyPipe     DirtyPipe - CVE-2022-0847
+   -Chroot        Sudo Chroot - CVE-2025-32463
    -Host          Sudo Host - CVE-2025-32462
+ 
+Cmds:
    -check         Verifie si gcc est installer
-   -perm          Applique les droit d'execution '/fullEx'
-   -help          Affiche les commandes
+   -perm          Applique les droit d'execution sur '/fullEx'
+   -help          Affiche les commandeses
  ```
 ## 🤖 LinPeas
 
