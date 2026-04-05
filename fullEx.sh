@@ -25,7 +25,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -LinPeas       Execute LinPeas"
      echo "   -LaZagne       Execute LaZagne"
      echo "   -Pspy64/32     Execute pspy64/32"
-     echo "   -DumpCred      Dump les creds"
+     echo "   -DumpCred      Execute DumpCred"
      echo " "
      echo "Exploits:"
      echo "   -Overlays      Compilation + execution binaire - CVE-2021-3493"
