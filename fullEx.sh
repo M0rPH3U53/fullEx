@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Banniere
-ascii() {
-     cat <<"EOF"
+cat <<"EOF"
                                                     
  $$$$$$\            $$\ $$\ $$$$$$$$\           
 $$  __$$\           $$ |$$ |$$  _____|          
@@ -15,10 +14,9 @@ $$ |      \$$$$$$  |$$ |$$ |$$$$$$$$\ $$  /\$$\
 
                by M0rPH3U53
 EOF
-}
+
 
 if [[ "$*" == "-help" ]]; then
-     ascii
      echo " "
      echo " "
      echo "Usage: ./fullEx.sh COMMAND"
