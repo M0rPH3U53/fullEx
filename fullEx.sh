@@ -60,18 +60,18 @@ fi
 
 # LinPeas
 if [[ "$*" == "-LinPeas" ]]; then
-   "${PWD}/linpeas/linpeas.sh"
+   "${PWD}/outils/linpeas/linpeas.sh"
 fi
 
 # LaZagne
 if [[ "$*" == "-LaZagne" ]]; then
-  "${PWD}/LaZagne/Linux/laZagne.py"
+  "${PWD}/outils/LaZagne/Linux/laZagne.py"
 fi
 
 # Pspy
 for arch in 64 32; do
      if [[ "$*" == "-Pspy${arch}" ]]; then
-          "${PWD}/pspy/pspy${arch}"
+          "${PWD}/outils/pspy/pspy${arch}"
      fi
 done
 
