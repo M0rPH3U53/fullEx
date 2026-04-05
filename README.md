@@ -60,7 +60,7 @@ Exploits:
 Cmds:
    -check         Verifie si gcc est installer
    -perm          Applique les droit d'execution sur '/fullEx'
-   -help          Affiche les commandeses
+   -help          Affiche les commandes
  ```
 ## 🤖 LinPeas
 
