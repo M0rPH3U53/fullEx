@@ -47,7 +47,7 @@ Outils:
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
    -Pspy64/32     Execute pspy64/32
-   -DumpCred      Dump les creds
+   -DumpCred      Execute DumpCred
  
 Exploits:
    -Overlays      Compilation + execution binaire - CVE-2021-3493
