@@ -18,7 +18,7 @@
 | LaZagne | Récupére les mots de passe stocké en local |
 | LinPeas | Script d'escalade de privilèges Linux |
 | Pspy | Surveille les processus Linux sans autorisations root |
-| Dumpcreds | Utilisé pour extraire diverses informations d'identification des processus en cours d'exécution |
+| Dumpcreds | Extrait diverses informations d'identification des processus en cours d'exécution |
 
 
 ## 🛠️ Commandes
