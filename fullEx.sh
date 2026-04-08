@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Banniere
-cat <<"EOF"
+ascii() {
+     cat <<"EOF"
                                                     
  $$$$$$\            $$\ $$\ $$$$$$$$\           
 $$  __$$\           $$ |$$ |$$  _____|          
@@ -14,9 +15,10 @@ $$ |      \$$$$$$  |$$ |$$ |$$$$$$$$\ $$  /\$$\
 
                by M0rPH3U53
 EOF
-
+}
 
 if [[ "$*" == "-help" ]]; then
+     ascii
      echo " "
      echo " "
      echo "Usage: ./fullEx.sh COMMAND"
@@ -77,7 +79,7 @@ done
 
 # DumpCred
 if [[ "$*" == "-DumpCred" ]]; then 
-     ${PWD}/outils/Dumpcred/dumpcreds -D
+     ${PWD}/outils/Dumpcreds/dumpcreds -D
 fi
 
 ## Exploit ##
