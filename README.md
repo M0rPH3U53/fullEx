@@ -157,7 +157,6 @@ Process 2766 (lightdm)
     Hash: $1$tu5P8JO6$g5sEFz1ZfpRzRzvjFffnv. = "password" (nick)
 Process 2781 (agetty)
 Process 2782 (Xorg)
-
 ```
 Sans sudo
 ```
