@@ -23,7 +23,7 @@
 
 ## 🛠️ Commandes
 
-Pour rendre executable fullEx.sh ,faire un -perm sur tout le dossier
+Pour rendre executable fullEx.sh faire un -perm
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
