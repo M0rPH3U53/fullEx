@@ -129,3 +129,9 @@ fi
 if [[ "$*" == "-CFail" ]]; then
      python3 ${PWD}/exploit/CopyFail/cf.py
 fi
+
+# Pack2TheRoot 
+if [[ "$*" == "-PKroot" ]]; then
+     python3 ${PWD}/exploit/Pack2TheRoot/pkroot.py
+
+fi
