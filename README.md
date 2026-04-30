@@ -278,3 +278,11 @@ ubuntu@ubuntuserver2204:~/fullEx$ ./fullEx.sh -Host
 sudo: unable to resolve host dev.test.local: Temporary failure in name resolution
 root@ubuntuserver2204:~#
 ```
+## 💀 Copy-Fail
+
+```
+user@debian:~/fullEx$ ./fullEx.sh -CFail
+# id
+uid=0(root) gid=1000(user) groups=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),100(users),101(netdev)
+#
+```
