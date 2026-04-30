@@ -56,7 +56,6 @@ Exploits:
    -DirtyCow      Compilation + execution binaire - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
    -DirtyPipe     DirtyPipe - CVE-2022-0847
-   -Chroot        Sudo Chroot - CVE-2025-32463
    -Host          Sudo Host - CVE-2025-32462
    -CFail         Copy Fail - CVE-2026-31431
  
