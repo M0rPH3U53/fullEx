@@ -58,6 +58,7 @@ Exploits:
    -DirtyPipe     DirtyPipe - CVE-2022-0847
    -Chroot        Sudo Chroot - CVE-2025-32463
    -Host          Sudo Host - CVE-2025-32462
+   -CFail         Copy Fail - CVE-2026-31431
  
 Cmds:
    -check         Verifie si gcc est installer
