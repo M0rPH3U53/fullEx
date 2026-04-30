@@ -36,6 +36,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
      echo "   -Host          Sudo Host - CVE-2025-32462"
      echo "   -CFail         Copy Fail - CVE-2026-31431"
+     echo "   -PKroot        Pack2TheRoot - CVE-2026-41651"
      echo " "
      echo "Cmds:"
      echo "   -check         Verifie si gcc est installer"
