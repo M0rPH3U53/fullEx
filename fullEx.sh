@@ -127,11 +127,10 @@ fi
 
 # Copy-Fail
 if [[ "$*" == "-CFail" ]]; then
-     python3 ${PWD}/exploit/CopyFail/cf.py
+     ${PWD}/exploits/CopyFail/cf
 fi
 
 # Pack2TheRoot 
 if [[ "$*" == "-PKroot" ]]; then
-     python3 ${PWD}/exploit/Pack2TheRoot/pkroot.py
-
+     ${PWD}/exploits/Pack2TheRoot/pkroot.sh
 fi
