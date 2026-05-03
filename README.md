@@ -52,7 +52,7 @@ Outils:
    -DumpCred      Execute DumpCred
  
 Exploits:
-   -Overlays      Compilation + execution binaire - CVE-2021-3493
+   -Overlays      Compilation + execution binaire - CVE-2015-1328
    -DirtyCow      Compilation + execution binaire - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
    -DirtyPipe     DirtyPipe - CVE-2022-0847
