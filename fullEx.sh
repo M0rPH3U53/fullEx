@@ -30,7 +30,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -DumpCred      Execute DumpCred"
      echo " "
      echo "Exploits:"
-     echo "   -Overlays      Compilation + execution binaire - CVE-2021-3493"
+     echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
      echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
      echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
      echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
