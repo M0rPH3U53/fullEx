@@ -12,7 +12,7 @@
 | Sudo-Host | CVE-2025-32462 | ✅ |
 | Pack2TheRoot | CVE-2026-41651 | ✅ |
 | Copy-Fail | CVE-2026-31431 | ✅ |
-| Dirty-Frag | CVE-2026-43284 CVE-2026-43500| ❌ |
+| Dirty-Frag | CVE-2026-43284 & CVE-2026-43500| ❌ |
 
 ## ⚙️ Outils
 
