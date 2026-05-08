@@ -60,6 +60,7 @@ Exploits:
    -Host          Sudo Host - CVE-2025-32462
    -CFail         Copy Fail - CVE-2026-31431
    -PKroot        Pack2TheRoot - CVE-2026-41651
+   -DirtyFrag     Dirty Frag - CVE-2026-43284
  
 Cmds:
    -check         Verifie si gcc est installer
