@@ -134,3 +134,9 @@ fi
 if [[ "$*" == "-PKroot" ]]; then
      ${PWD}/exploit/Pack2TheRoot/pkroot.sh
 fi
+
+# DirtyFrag
+#if [[ "$*" == "-DirtyFrag" ]]; then
+#     ${PWD}/exploits/-DirtyFrag/df
+
+#fi
