@@ -139,5 +139,4 @@ fi
 # DirtyFrag
 if [[ "$*" == "-DirtyFrag" ]]; then
      ${PWD}/exploit/DirtyFrag/df
-
 fi
