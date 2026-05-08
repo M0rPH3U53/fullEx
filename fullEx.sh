@@ -136,7 +136,7 @@ if [[ "$*" == "-PKroot" ]]; then
 fi
 
 # DirtyFrag
-#if [[ "$*" == "-DirtyFrag" ]]; then
-#     ${PWD}/exploits/-DirtyFrag/df
+if [[ "$*" == "-DirtyFrag" ]]; then
+     ${PWD}/exploit/DirtyFrag/df
 
-#fi
+fi
