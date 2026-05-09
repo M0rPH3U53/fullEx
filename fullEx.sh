@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Banniere
-ascii() {
+ban() {
      cat <<"EOF"
                                                     
  $$$$$$\            $$\ $$\ $$$$$$$$\           
@@ -18,7 +18,7 @@ EOF
 }
 
 if [[ "$*" == "-help" ]]; then
-     ascii
+     ban
      echo " "
      echo " "
      echo "Usage: ./fullEx.sh COMMAND"
