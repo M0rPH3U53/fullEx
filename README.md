@@ -269,7 +269,7 @@ user@debian:~/fullEx$ ./fullEx.sh -DirtyFrag
 # id
 uid=0(root) gid=0(root) groups=0(root)
 ```
-## 💀 Dirty-Frag
+## 💀 Fragnesia
 
 ```
 user@debian:~/fullEx$ ./fullEx.sh -Fragnesia
