@@ -272,7 +272,7 @@ uid=0(root) gid=0(root) groups=0(root)
 ## 💀 Fragnesia
 
 ```
-user@debian:~/fullEx$ ./fullEx.sh -Fragnesia
+osboxes@ubuntu2204:~/fullEx$ ./fullEx.sh -Fragnesia
 [*] uid=1000 euid=1000 gid=1000 egid=1000
 [*] mode=xfrm_espintcp_pagecache_replace collateral=after
 
