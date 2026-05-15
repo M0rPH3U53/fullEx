@@ -13,7 +13,7 @@
 | Pack2TheRoot | CVE-2026-41651 | ✅ |
 | Copy-Fail | CVE-2026-31431 | ✅ |
 | Dirty-Frag | CVE-2026-43284 | ✅ |
-| Fragnesia | CVE-2026-46300 |❌|
+| Fragnesia | CVE-2026-46300 |✅|
 
 ## ⚙️ Outils
 
@@ -62,6 +62,7 @@ Exploits:
    -CFail         Copy Fail - CVE-2026-31431
    -PKroot        Pack2TheRoot - CVE-2026-41651
    -DirtyFrag     Dirty Frag - CVE-2026-43284
+   -Fragnesia     Fragnesia - CVE-2026-46300
  
 Cmds:
    -check         Verifie si gcc est installer
