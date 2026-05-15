@@ -38,6 +38,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -CFail         Copy Fail - CVE-2026-31431"
      echo "   -PKroot        Pack2TheRoot - CVE-2026-41651"
      echo "   -DirtyFrag     Dirty Frag - CVE-2026-43284"
+     echo "   -Fragnesia     Fragnesia - CVE-2026-46300"
      echo " "
      echo "Cmds:"
      echo "   -check         Verifie si gcc est installer"
@@ -47,7 +48,7 @@ if [[ "$*" == "-help" ]]; then
      exit 0
 fi
 
-# Applique les droit d'execution sur le l'ensemble du dossier fullEx
+# Applique droit d'execution
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
 fi
@@ -139,4 +140,9 @@ fi
 # DirtyFrag
 if [[ "$*" == "-DirtyFrag" ]]; then
      ${PWD}/exploit/DirtyFrag/df
+fi
+
+# Fragnesia
+if [[ "$*" == "-Fragnesia" ]]; then
+     ${PWD}/exploit/Fragnesia/fg
 fi
