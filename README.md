@@ -15,7 +15,7 @@
 | Dirty-Frag | CVE-2026-43284 | ✅ |
 | Fragnesia | CVE-2026-46300 |✅|
 | DirtyDecrypt | CVE-2026-31635 |❌|
-
+| PinTheft | - |❌|
 ## ⚙️ Outils
 
 | Outils | Description |
