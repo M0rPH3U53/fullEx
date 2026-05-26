@@ -14,7 +14,7 @@
 | Copy-Fail | CVE-2026-31431 | ✅ |
 | Dirty-Frag | CVE-2026-43284 | ✅ |
 | Fragnesia | CVE-2026-46300 |✅|
-| ssh-keysign-pwn | CVE-2026-46333 |-|
+| ssh-keysign-pwn | CVE-2026-46333 |✅|
 ## ⚙️ Outils
 
 | Outils | Description |
@@ -63,6 +63,7 @@ Exploits:
    -PKroot        Pack2TheRoot - CVE-2026-41651
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
+   -ReadRoot      pwn-key-ssh & chage - CVE-2026-46333
  
 Cmds:
    -check         Verifie si gcc est installer
