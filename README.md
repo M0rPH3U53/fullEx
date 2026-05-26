@@ -63,7 +63,7 @@ Exploits:
    -PKroot        Pack2TheRoot - CVE-2026-41651
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
-   -ReadRoot      pwn-key-ssh & chage - CVE-2026-46333
+   -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-46333
  
 Cmds:
    -check         Verifie si gcc est installer
@@ -339,7 +339,7 @@ sender_status=0 receiver_status=0
 # id    
 uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
 ```
-## 💀 ReadRoot
+## 💀 DirtyDecrypt
 
 ```
 osboxes@ubuntu2204:~/fullEx$ ./fullEx.sh -ReadRoot
