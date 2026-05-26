@@ -39,7 +39,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -PKroot        Pack2TheRoot - CVE-2026-41651"
      echo "   -DirtyFrag     Dirty Frag - CVE-2026-43284"
      echo "   -Fragnesia     Fragnesia - CVE-2026-46300"
-     echo "   -ReadRoot      pwn-key-ssh & chage - CVE-2026-46333"
+     echo "   -DirtyDecrypt      pwn-key-ssh & chage - CVE-2026-46333"
      echo " "
      echo "Cmds:"
      echo "   -check         Verifie si gcc est installer"
