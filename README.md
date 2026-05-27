@@ -63,7 +63,7 @@ Exploits:
    -PKroot        Pack2TheRoot - CVE-2026-41651
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
-   -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-46333
+   -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-31635
  
 Cmds:
    -check         Verifie si gcc est installer
