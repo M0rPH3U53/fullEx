@@ -16,7 +16,6 @@
 | Fragnesia | CVE-2026-46300 |✅|
 | DirtyDecrypt | CVE-2026-31635 |✅|
 | PeditCow | CVE-2026-46331 |✅|
-| DirtyClone | CVE-2026-43503 |❌|
 
 ## ⚙️ Outils
 
