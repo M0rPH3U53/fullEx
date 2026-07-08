@@ -158,8 +158,8 @@ fi
 
 # PeditCow
 if [[ "$*" == "-PeditCow" ]]; then
-     gcc -O2 -Wall -static ${PWD}/exploits/PeditCow/packet_edit_meme.c ${PWD}/exploits/PeditCow/pedit_primitive.c      
+     gcc -O2 -Wall -static ${PWD}/exploit/PeditCow/packet_edit_meme.c ${PWD}/exploit/PeditCow/pedit_primitive.c      
      echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploits/PeditCow/a.out"
+     echo "[+] PATH=${PWD}/exploit/PeditCow/a.out"
      echo "[+] Executing the binary..."
-     ${PWD}/exploits/PeditCow/a.out
+     ${PWD}/exploit/PeditCow/a.out
