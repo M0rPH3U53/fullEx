@@ -65,7 +65,7 @@ Exploits:
    -PKroot        Pack2TheRoot - CVE-2026-41651
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
-   -SKP           ssh-keysign-pwn - CVE-2026-46333
+   -SKP           Compilation + execution binaire - CVE-2026-46333
    -PeditCow      Compilation + execution binaire - CVE-2026-46331
  
 Cmds:
