@@ -162,4 +162,4 @@ if [[ "$*" == "-PeditCow" ]]; then
      echo "[+] Compilation successfuly !"
      echo "[+] PATH=${PWD}/exploit/PeditCow/peditcow"
      echo "[+] Executing the binary..."
-     ${PWD}/exploit/PeditCow//peditcow
+     ${PWD}/exploit/PeditCow/peditcow
