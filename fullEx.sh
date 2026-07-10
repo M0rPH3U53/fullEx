@@ -39,7 +39,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -PKroot        Pack2TheRoot - CVE-2026-41651"
      echo "   -DirtyFrag     Dirty Frag - CVE-2026-43284"
      echo "   -Fragnesia     Fragnesia - CVE-2026-46300"
-     echo "   -SKP           ssh-keysign-pwn - CVE-2026-46333"
+     echo "   -SKP           Compilation + execution binaire - CVE-2026-46333"
      echo "   -PeditCow      PeditCow - CVE-2026-46331"
      echo " "
      echo "Cmds:"
