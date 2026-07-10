@@ -151,7 +151,7 @@ fi
 
 # ssh-keysign-pwn
 if [[ "$*" == "-SKP" ]]; then
-     gcc -o ${PWD}/exploit/ssh-keysign-pwn/exploit_vuln_target.c ${PWD}/exploit/ssh-keysign-pwn/skp
+     gcc ${PWD}/exploit/ssh-keysign-pwn/exploit_vuln_target.c -o ${PWD}/exploit/ssh-keysign-pwn/skp
      echo "[+] Compilation successfuly !"
      echo "[+] PATH=${PWD}/exploit/ssh-keysign-pwn/skp"
      echo "[+] Executing the binary..."
