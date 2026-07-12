@@ -79,15 +79,37 @@ Cmds:
 www-data@Milburg-High:/tmp/fullEx$ bash fullEx.sh -perm
 www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -LinPeas
 
-╔══════════╣ Executing Linux Exploit Suggester
-╚ https://github.com/mzet-/linux-exploit-suggester
+╔══════════╣ Checking for Copy Fail (CVE-2026-31431) (T1068)
+╚ https://copy.fail/
+╚ https://www.cve.org/CVERecord?id=CVE-2026-31431
+VULNERABLE: non-destructive AF_ALG/splice page-cache write triggered
 
-[+] [CVE-2021-4034] PwnKit
+╔══════════╣ Kernel Exploit Registry (T1068)
+═╣ Operating system ............. Linux
+═╣ Kernel release ............... 6.12.74+deb13+1-amd64
+═╣ Comparable version ........... 6.12.74
+═╣ Data chunk limit ............. max 25 rows per KERNEL_CVE_DATA_* variable (1..22)
+═╣ Kernel config source ......... /boot/config-6.12.74+deb13+1-amd64
+CVE: CVE-2026-43503 | Name: DirtyClone | Match data: pkg=linux-kernel,ver>=6.7,ver<6.12.91 | Tags: 1 | Rank: Fixed in stable 6.12.91; exploit path is in the networking stack and may be mitigated by removing the relevant ESP modules
+CVE: CVE-2026-46331 | Name: pedit COW | Match data: pkg=linux-kernel,ver>=5.18,ver<6.12.94 | Tags: 1 | Rank: Fixed in stable 6.12.94; exploit path uses the traffic-control act_pedit subsystem
+CVE: CVE-2026-46333 | Name: ptrace exit-race | Match data: pkg=linux-kernel,ver>=6.7,ver<6.12.89,cmd:[ "$(cat /proc/sys/kernel/yama/ptrace_scope 2>/dev/null || echo 0)" -lt 2 ] | Tags: 1 | Rank: Upstream issue introduced in 4.10; fixed in 6.12.89; mitigated by kernel.yama.ptrace_scope >= 2
+═╣ Kernel vulns found: 3
 
-   Details: https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt
-   Exposure: probable
-   Tags: ubuntu=10|11|12|13|14|15|16|17|18|19|20|21,[ debian=7|8|9|10|11 ],fedora,manjaro
-   Download URL: https://codeload.github.com/berdav/CVE-2021-4034/zip/main
+╔══════════╣ Checking for Dirty Frag (CVE-2026-43284 / CVE-2026-43500) (T1068)
+╚ https://ubuntu.com/blog/dirty-frag-linux-vulnerability-fixes-available
+╚ https://www.cve.org/CVERecord?id=CVE-2026-43284
+╚ https://www.cve.org/CVERecord?id=CVE-2026-43500
+CVE-2026-43284 (xfrm-ESP): autoloadable: esp4 esp6 xfrm_user ipcomp6
+CVE-2026-43500 (rxrpc): autoloadable: rxrpc
+modprobe mitigation (xfrm-ESP): not found
+modprobe mitigation (rxrpc): not found
+Unprivileged user namespaces: enabled
+Kernel build predates upstream fix (2026-05-08): likely unpatched unless distro backport.
+LIKELY VULNERABLE to CVE-2026-43284 (xfrm-ESP).
+LIKELY VULNERABLE to CVE-2026-43500 (rxrpc).
+Mitigation: 'install esp4/esp6/rxrpc /bin/false' in /etc/modprobe.d/, then rmmod;
+or sysctl kernel.unprivileged_userns_clone=0; or apply distro patches.
+
 ```
 
 ## 👾 LaZagne
