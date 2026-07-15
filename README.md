@@ -19,12 +19,12 @@
 
 ## ⚙️ Outils
 
-| Outils | Description |
-| --- | --- |
-| LaZagne | Récupére les mots de passe stocké en local |
-| LinPeas | Script d'escalade de privilèges Linux |
-| Pspy | Surveille les processus Linux sans autorisations root |
-| Dumpcreds | Extrait diverses informations d'identification des processus en cours d'exécution |
+| Outils | Description | URL |
+| --- | --- | --- |
+| LaZagne | Récupére les mots de passe stocké en local | https://github.com/AlessandroZ/LaZagne/ |
+| LinPeas | Script d'escalade de privilèges Linux | https://github.com/peass-ng/PEASS-ng |
+| Pspy | Surveille les processus Linux sans autorisations root | https://github.com/DominicBreuker/pspy |
+| Dumpcreds | Extrait diverses informations d'identification des processus en cours d'exécution | https://github.com/ponypot/dumpcreds | 
 
 
 ## 🛠️ Commandes
