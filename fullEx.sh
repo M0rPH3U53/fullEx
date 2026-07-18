@@ -104,7 +104,6 @@ if [[ "$*" == "-Overlays" ]]; then
      echo "[+] PATH=${PWD}/exploit/Overlays/overlays"
      echo "[+] Executing the binary..."
      ${PWD}/exploit/Overlays/overlays
-
 fi
 
 # DirtyCow
