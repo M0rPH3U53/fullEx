@@ -69,7 +69,8 @@ Exploits:
    -PeditCow      Pedit Cow - CVE-2026-46331
  
 Cmds:
-   -check         Verifie si gcc est installer
+   -check-gcc     Verifie si gcc est installer
+   -check-python  Verifie si python est installer
    -perm          Applique les droit d'execution sur '/fullEx'
    -help          Affiche les commandes
  ```
