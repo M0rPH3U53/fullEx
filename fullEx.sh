@@ -43,8 +43,9 @@ if [[ "$*" == "-help" ]]; then
      echo "   -PeditCow      Pedit Cow - CVE-2026-46331"
      echo " "
      echo "Cmds:"
-     echo "   -check         Verifie si gcc est installer"
-     echo "   -perm          Applique les droit d'execution sur '/fullEx'"
+     echo "   -check-gcc     Verifie si gcc est installer"
+     echo "   -check-python  Verifie si python est installe"
+     echo "   -perm          Applique les droit d'execution pour fullex"
      echo "   -help          Affiche les commandes"
      echo " "
      exit 0
@@ -56,7 +57,7 @@ if [[ "$*" == "-perm" ]]; then
 fi
 
 # Verifie si GCC est installer
-if [[ "$*" == "check-gcc" ]]; then
+if [[ "$*" == "-check-gcc" ]]; then
      if which gcc >/dev/null 2>&1; then
           echo "[+] GCC found!"
      else
@@ -65,7 +66,7 @@ if [[ "$*" == "check-gcc" ]]; then
 fi
 
 # Verifie si Python est installer
-if [[ "$*" == "check-python" ]]; then
+if [[ "$*" == "-check-python" ]]; then
      if which python >/dev/null 2>&1; then
           echo "[+] Python found!"
      else
