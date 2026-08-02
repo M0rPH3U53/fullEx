@@ -66,7 +66,7 @@ Exploits:
    -DirtyFrag     Dirty Frag - CVE-2026-43284
    -Fragnesia     Fragnesia - CVE-2026-46300
    -SKP           ssh-keysign-pwn - CVE-2026-46333
-   -PeditCow      PeditCow - CVE-2026-46331
+   -PeditCow      Pedit Cow - CVE-2026-46331
  
 Cmds:
    -check         Verifie si gcc est installer
