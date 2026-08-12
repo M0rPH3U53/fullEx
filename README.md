@@ -57,8 +57,8 @@ Outils:
    -DumpCred      Execute DumpCred
  
 Exploits:
-   -Overlays      Compilation + execution binaire - CVE-2015-1328
-   -DirtyCow      Compilation + execution binaire - CVE-2016-5195
+   -Overlays      Overlays - CVE-2015-1328
+   -DirtyCow      DirtyCow - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
    -DirtyPipe     DirtyPipe - CVE-2022-0847
    -Host          Sudo Host - CVE-2025-32462
@@ -68,6 +68,7 @@ Exploits:
    -Fragnesia     Fragnesia - CVE-2026-46300
    -SKP           ssh-keysign-pwn - CVE-2026-46333
    -PeditCow      Pedit Cow - CVE-2026-46331
+   -DirtyClone    DirtyClone - CVE-2026-43503
  
 Cmds:
    -check-gcc     Verifie si gcc est installer
