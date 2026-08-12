@@ -41,6 +41,7 @@ if [[ "$*" == "-help" ]]; then
      echo "   -Fragnesia     Fragnesia - CVE-2026-46300"
      echo "   -SKP           ssh-keysign-pwn - CVE-2026-46333"
      echo "   -PeditCow      Pedit Cow - CVE-2026-46331"
+     echo "   -DirtyClone    DirtyClone - CVE-2026-46331"
      echo " "
      echo "Cmds:"
      echo "   -check-gcc     Verifie si gcc est installer"
@@ -158,4 +159,9 @@ fi
 # PeditCow
 if [[ "$*" == "-PeditCow" ]]; then
      ${PWD}/exploits/PeditCow/a.out
+fi
+
+# DirtyClone
+if [[ "$*" == "-DirtyClone" ]]; then
+  "${PWD}/exploits/DirtyClone/dirtyclone.py"
 fi
