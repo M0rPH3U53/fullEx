@@ -109,7 +109,7 @@ if [[ "$*" == "-DumpCred" ]]; then
      ${PWD}/outils/Dumpcreds/dumpcreds -D
 fi
 
-## Exploit ##
+## Exploits ##
 
 # PwnKit
 for arch in 64 32; do
