@@ -80,8 +80,7 @@ Usage: ./fullEx.sh COMMAND
                       ⚙️ Commandes
 ─────────────────────────────────────────────────────
 
-   -check-gcc     Verifie si gcc est installer
-   -check-python  Verifie si python est installe
+   -check         Verifie gcc & python
    -perm          Applique droit d'execution fullex
    -help          Affiche les commandes
 
