@@ -34,6 +34,7 @@ Pour rendre exécutable `fullEx.sh` faire `-perm`
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
+[+] Droit d'éxécution appliqué!
 vagrant@metasploitable3-ub1404:~/fullEx$ ./fullEx.sh -help
                                                                                                     
  $$$$$$\            $$\ $$\ $$$$$$$$\           
