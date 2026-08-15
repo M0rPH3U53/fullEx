@@ -30,7 +30,7 @@
 
 ## 🛠️ Commandes
 
-Pour rendre exécutable `fullEx.sh` faire un `-perm`
+Pour rendre exécutable `fullEx.sh` faire `-perm`
 
 ```
 vagrant@metasploitable3-ub1404:~/fullEx$ bash fullEx.sh -perm
