@@ -28,7 +28,7 @@
 | Dumpcreds | Extrait diverses informations d'identification des processus en cours d'exécution | https://github.com/ponypot/dumpcreds | 
 
 
-# 🛠️ Commandes
+## 🛠️ Commandes
 
 Pour rendre exécutable `fullEx.sh` faire `-perm`
 
@@ -146,7 +146,7 @@ root@Milburg-High:/tmp/fullEx# ./fullEx.sh -LaZagne
 Login: seb
 Hash: $6$4.6B1rmh$iaH45IN/kqI4A8Yg0oeY74nXxcicIV3gplln3koT/h2T9qDbs6b0jFWyRyuP5f23OAIyNf5F2WwptKSoDvD4o1:17589:0:99999:7:::
 
-[+] 6 passwords have been found.
+[+] 1 passwords have been found.
 For more information launch it again with the -v option
 
 elapsed time = 9.25296401978
