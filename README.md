@@ -80,8 +80,8 @@ Usage: ./fullEx.sh COMMAND
                       ⚙️ Commandes
 ─────────────────────────────────────────────────────
 
-   -check         Verifie gcc & python
-   -perm          Applique droit d'execution fullex
+   -check         Vérifie gcc & python
+   -perm          Applique droit d'exécution
    -help          Affiche les commandes
 
 ─────────────────────────────────────────────────────
