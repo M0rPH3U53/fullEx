@@ -54,7 +54,7 @@ Usage: ./fullEx.sh COMMAND
                       🧰 Outils
 ─────────────────────────────────────────────────────
 
-   -LinPeas       Script d'escalade de privilèges Linux
+   -LinPeas       Script d'escalade de privilèges
    -LaZagne       Récupére les mots de passe local
    -Pspy64/32     Récupére les processus en cours
    -DumpCred      Extraits des info des processus
