@@ -69,7 +69,7 @@ if [[ "$*" == "-perm" ]]; then
 fi
 
 # Verifie si GCC & Python sont installé
-if [[ "$*" == "-check" ]]; then
+if [[ "$*" == "-check-install" ]]; then
      if which gcc >/dev/null 2>&1; then
           echo "[+] GCC found!"
      else
