@@ -62,6 +62,8 @@ echo " "
      exit 0
 fi
 
+################################################## Cmds ##################################################
+
 # Applique droit d'execution
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
@@ -85,7 +87,7 @@ if [[ "$*" == "-check-python" ]]; then
      fi
 fi
 
-## Outils ##
+################################################## Outils ##################################################
 
 # LinPeas
 if [[ "$*" == "-LinPeas" ]]; then
@@ -109,7 +111,7 @@ if [[ "$*" == "-DumpCred" ]]; then
      ${PWD}/outils/Dumpcreds/dumpcreds -D
 fi
 
-## Exploits ##
+################################################## Exploits ##################################################
 
 # PwnKit
 for arch in 64 32; do
