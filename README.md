@@ -54,10 +54,10 @@ Usage: ./fullEx.sh COMMAND
                       🧰 Outils
 ─────────────────────────────────────────────────────
 
-   -LinPeas       Execute LinPeas
-   -LaZagne       Execute LaZagne
-   -Pspy64/32     Execute pspy64/32
-   -DumpCred      Execute DumpCred
+   -LinPeas       Script d'escalade de privilèges
+   -LaZagne       Récupére les mots de passe local
+   -Pspy64/32     Récupére les processus en cours
+   -DumpCred      Extraits des info des processus
 
 ─────────────────────────────────────────────────────
                       💀 Exploits
