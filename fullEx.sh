@@ -63,9 +63,10 @@ fi
 
 ################################################## Cmds ##################################################
 
-# Applique droit d'execution
+# Applique droit d'execution sur le dossier fullEx
 if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
+   echo "[+] Droit d'éxécution appliqué !"
 fi
 
 # Verifie si GCC & Python sont installé
