@@ -87,7 +87,7 @@ Usage: ./fullEx.sh COMMAND
 
 ─────────────────────────────────────────────────────
  ```
-# 🧰 Démo outils
+# 👁️ Démo outils
 ## 🤖 LinPeas
 
 ```
@@ -225,6 +225,7 @@ Process 2998 (-bash)
 Process 3288 (bash)
 Nbs dumped items: 0
 ```
+# 👁️ Démo exploits
 ## 💀 Sudo-Host
 
 ```
