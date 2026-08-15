@@ -53,8 +53,7 @@ echo " "
      echo "                   ⚙️ Commandes                   "
      echo "──────────────────────────────────────────────────"
      echo " "
-     echo "   -check-gcc     Verifie si gcc est installer"
-     echo "   -check-python  Verifie si python est installe"
+     echo "   -check         Verifie gcc & python"
      echo "   -perm          Applique droit d'execution fullex"
      echo "   -help          Affiche les commandes"
      echo " "
@@ -69,17 +68,14 @@ if [[ "$*" == "-perm" ]]; then
    find ${PWD} -type f -exec chmod +x {} \;
 fi
 
-# Verifie si GCC est installer
-if [[ "$*" == "-check-gcc" ]]; then
+# Verifie si GCC & Python sont installé
+if [[ "$*" == "-check" ]]; then
      if which gcc >/dev/null 2>&1; then
           echo "[+] GCC found!"
      else
           echo "[-] GCC not found!"
      fi
-fi
 
-# Verifie si Python est installer
-if [[ "$*" == "-check-python" ]]; then
      if which python >/dev/null 2>&1; then
           echo "[+] Python found!"
      else
