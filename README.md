@@ -50,13 +50,19 @@ $$ |      \$$$$$$  |$$ |$$ |$$$$$$$$\ $$  /\$$\
  
 Usage: ./fullEx.sh COMMAND
  
-Outils:
+─────────────────────────────────────────────────────
+                      🧰 Outils
+─────────────────────────────────────────────────────
+
    -LinPeas       Execute LinPeas
    -LaZagne       Execute LaZagne
    -Pspy64/32     Execute pspy64/32
    -DumpCred      Execute DumpCred
- 
-Exploits:
+
+─────────────────────────────────────────────────────
+                      💀 Exploits
+─────────────────────────────────────────────────────
+
    -Overlays      Overlays - CVE-2015-1328
    -DirtyCow      DirtyCow - CVE-2016-5195
    -PwnKit64/32   PwnKit64/32 - CVE-2021-4034
@@ -69,12 +75,17 @@ Exploits:
    -SKP           ssh-keysign-pwn - CVE-2026-46333
    -PeditCow      Pedit Cow - CVE-2026-46331
    -DirtyClone    DirtyClone - CVE-2026-43503
- 
-Cmds:
+
+─────────────────────────────────────────────────────
+                      ⚙️ Cmds
+─────────────────────────────────────────────────────
+
    -check-gcc     Verifie si gcc est installer
-   -check-python  Verifie si python est installer
-   -perm          Applique les droit d'execution sur '/fullEx'
+   -check-python  Verifie si python est installe
+   -perm          Applique droit d'execution fullex
    -help          Affiche les commandes
+
+─────────────────────────────────────────────────────
  ```
 ## 🤖 LinPeas
 
