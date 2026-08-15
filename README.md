@@ -54,7 +54,7 @@ Usage: ./fullEx.sh COMMAND
                       🧰 Outils
 ─────────────────────────────────────────────────────
 
-   -LinPeas       Script d'escalade de privilèges
+   -LinPeas       Script d'escalade de privilèges Linux
    -LaZagne       Récupére les mots de passe local
    -Pspy64/32     Récupére les processus en cours
    -DumpCred      Extraits des info des processus
@@ -77,7 +77,7 @@ Usage: ./fullEx.sh COMMAND
    -DirtyClone    DirtyClone - CVE-2026-43503
 
 ─────────────────────────────────────────────────────
-                      ⚙️ Cmds
+                      ⚙️ Commandes
 ─────────────────────────────────────────────────────
 
    -check-gcc     Verifie si gcc est installer
