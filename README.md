@@ -57,7 +57,7 @@ Usage: ./fullEx.sh COMMAND
    -LinPeas       Script d'escalade de privilèges
    -LaZagne       Récupére les mots de passe local
    -Pspy64/32     Récupére les processus en cours
-   -DumpCred      Extraits des info des processus
+   -DumpCred      Extraits les creds de processus
 
 ─────────────────────────────────────────────────────
                       💀 Exploits
