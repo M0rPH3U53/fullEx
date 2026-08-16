@@ -83,7 +83,7 @@ Usage: ./fullEx.sh COMMAND
 
    -check-prog    Vérifie gcc & python
    -perm          Applique droit d'exécution
-   -shell         Affiche le shell par utilisé
+   -shell         Affiche le shell utilisé
    -help          Affiche les commandes
 
 ─────────────────────────────────────────────────────
