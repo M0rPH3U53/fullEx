@@ -19,7 +19,6 @@ EOF
 
 if [[ "$*" == "-help" ]]; then
      ban
-echo " "
      echo " "
      echo "Usage: ./fullEx.sh COMMAND"
      echo " "
