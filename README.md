@@ -82,8 +82,8 @@ Usage: ./fullEx.sh COMMAND
 ─────────────────────────────────────────────────────
 
    -check-prog    Vérifie gcc & python
-   -perm          Applique droit d'exécution
-   -shell         Affiche le shell utilisé
+   -perm          Applique les droits d'execution
+   -shell         Type de shell utilisé
    -help          Affiche les commandes
 
 ─────────────────────────────────────────────────────
@@ -93,6 +93,7 @@ Usage: ./fullEx.sh COMMAND
 
 ```
 www-data@Milburg-High:/tmp/fullEx$ bash fullEx.sh -perm
+[+] Droit d'exécution appliqué !
 www-data@Milburg-High:/tmp/fullEx$ ./fullEx.sh -LinPeas
 
 ╔══════════╣ Checking for Copy Fail (CVE-2026-31431) (T1068)
