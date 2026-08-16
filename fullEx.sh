@@ -84,6 +84,11 @@ if [[ "$*" == "-check-install" ]]; then
      fi
 fi
 
+# Type de shell utilisé par defaut
+if [[ "$*" == "-shell" ]]; then
+   echo "[+] Shell: $SHELL"
+fi
+
 ################################################## Outils ##################################################
 
 # LinPeas
