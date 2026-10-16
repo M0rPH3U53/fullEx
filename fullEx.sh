@@ -52,7 +52,7 @@ if [[ "$*" == "-help" ]]; then
      echo "                   ⚙️ Commandes                   "
      echo "─────────────────────────────────────────────────"
      echo " "
-     echo "   -check-prog    Verifie gcc & python"
+     echo "   -check         Verifie gcc & python"
      echo "   -perm          Applique les droits d'execution"
      echo "   -shell         Type de shell utilisé"
      echo "   -help          Affiche les commandes"
@@ -70,7 +70,7 @@ if [[ "$*" == "-perm" ]]; then
 fi
 
 # Verifie si GCC & Python sont installé
-if [[ "$*" == "-check-prog" ]]; then
+if [[ "$*" == "-check" ]]; then
      if which gcc >/dev/null 2>&1; then
           echo "[+] GCC found !"
      else
@@ -147,7 +147,7 @@ fi
 
 # Copy-Fail
 if [[ "$*" == "-CFail" ]]; then
-     ${PWD}/exploits/CopyFail/copyfail
+     ${PWD}/exploits/CopyFail/copyfaile
 fi
 
 # Pack2TheRoot 
